@@ -1,0 +1,6 @@
+# In /netlify.toml (at the root of your project)
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/server" # Note: 'server', not 'server.js'
+  status = 200
