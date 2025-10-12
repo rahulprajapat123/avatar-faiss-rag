@@ -738,23 +738,11 @@ process.on('SIGINT', async () => {
   process.exit(0);
 });
 
-app.listen(CONFIG.PORT, () => {
+app.listen(CONFIG.PORT, '0.0.0.0', () => {
   console.log('\n' + '='.repeat(70));
   console.log('🚀 HeyGen + Voiceflow Server (ULTRA-OPTIMIZED)');
   console.log('='.repeat(70));
-  console.log(`\n✅ Server running on port ${CONFIG.PORT}`);
-  console.log(`📍 URL: http://localhost:${CONFIG.PORT}`);
-  console.log('\n⚡ Active Optimizations:');
-  console.log('   1. Specified language for transcription (-500ms)');
-  console.log('   2. Response caching for repeat queries (-2000ms on cache hit)');
-  console.log('   3. Aggressive timeouts (fail fast)');
-  console.log('   4. Parallel processing where possible');
-  console.log('   5. Fire-and-forget avatar speech');
-  console.log('   6. Reduced quality for faster streaming');
-  console.log('   7. Excluded unnecessary Voiceflow traces');
-  console.log('   8. Latency tracking for every request');
-  console.log('   9. Cache cleanup to prevent memory leaks');
-  console.log('   10. Optimized audio settings');
-  console.log('\n🎯 Expected latency: 1.5-2.5s (down from 5+s)');
+  console.log(`🎯 Expected latency: 1.5-2.5s (down from 5+s)`);
+  console.log(`✅ Server running on port ${CONFIG.PORT}`);
   console.log('='.repeat(70) + '\n');
 });
