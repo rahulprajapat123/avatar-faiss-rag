@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🤖 AI Avatar Assistant</title>
+  
+  <script src="https://cdn.jsdelivr.net/npm/livekit-client/dist/livekit-client.umd.min.js"></script>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1600px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 95vh;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 20px 30px;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    .header p {
+      margin: 5px 0 0;
+      opacity: 0.9;
+      font-size: 0.95em;
+    }
+
+    .main-content {
+      flex-grow: 1;
+      display: grid;
+      grid-template-columns: 2.5fr 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .video-section {
+      position: relative;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      border-radius: 15px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #avatarVideo {
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border-radius: 15px;
+      object-fit: cover;
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    #audioElement {
+      display: none;
+    }
+
+    .video-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 1.2em;
+      color: white;
+      z-index: 1;
+      position: relative;
+    }
+
+    .video-placeholder.hidden {
+      display: none;
+    }
+
+    .video-placeholder .icon {
+      font-size: 5em;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .loader {
+      border: 5px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top: 5px solid white;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+      display: none;
+    }
+
+    .loader.active {
+      display: block;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .chat-section {
+      display: flex;
+      flex-direction: column;
+      background: #f8f9fa;
+      border-radius: 15px;
+      overflow: hidden;
+      border: 2px solid #e0e0e0;
+    }
+
+    .chat-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 1.1em;
+      text-align: center;
+    }
+
+    .chat-messages {
+      flex-grow: 1;
+      overflow-y: auto;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      background: white;
+      min-height: 0;
+    }
+
+    .chat-messages::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .chat-messages::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+
+    .chat-messages::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+    }
+
+    .chat-messages::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    .message {
+      padding: 12px 15px;
+      border-radius: 12px;
+      max-width: 85%;
+      word-wrap: break-word;
+      animation: slideIn 0.3s ease-out;
+      line-height: 1.5;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .message.user {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      align-self: flex-end;
+      border-bottom-right-radius: 4px;
+    }
+
+    .message.avatar {
+      background: #e9ecef;
+      color: #333;
+      align-self: flex-start;
+      border-bottom-left-radius: 4px;
+      border-left: 3px solid #667eea;
+    }
+
+    .message.system {
+      background: #fff3cd;
+      color: #856404;
+      align-self: center;
+      font-size: 0.9em;
+      font-style: italic;
+      text-align: center;
+      border-radius: 20px;
+      max-width: 70%;
+    }
+
+    .message-time {
+      font-size: 0.75em;
+      opacity: 0.7;
+      margin-top: 5px;
+      display: block;
+    }
+
+    .control-section {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .status-box {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 10px;
+      border-left: 4px solid #667eea;
+    }
+
+    .status-box h3 {
+      margin: 0 0 10px 0;
+      color: #333;
+      font-size: 1em;
+    }
+
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    #statusDot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #dc3545;
+      transition: background 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    #statusDot.active {
+      background: #28a745;
+      box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+      animation: blink 2s ease-in-out infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    #statusText {
+      font-size: 0.9em;
+      flex-grow: 1;
+    }
+
+    .connection-info {
+      background: #e7f3ff;
+      padding: 10px;
+      border-radius: 8px;
+      border-left: 3px solid #2196F3;
+      margin-top: 10px;
+      font-size: 0.85em;
+    }
+
+    .connection-info strong {
+      color: #2196F3;
+      font-size: 0.85em;
+    }
+
+    .connection-info span {
+      display: block;
+      margin-top: 3px;
+      word-break: break-all;
+      font-size: 0.8em;
+    }
+
+    .btn {
+      padding: 14px 20px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      font-size: 0.95em;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .btn:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    .btn:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+
+    .btn-success {
+      background: #28a745;
+      color: white;
+    }
+
+    .btn-danger {
+      background: #dc3545;
+      color: white;
+    }
+
+    .btn-success.recording {
+      background: #e74c3c;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(231, 76, 60, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
+    }
+
+    .input-section {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: auto;
+    }
+
+    .chat-input {
+      display: flex;
+      gap: 10px;
+    }
+
+    .chat-input input {
+      flex: 1;
+      padding: 12px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 0.95em;
+    }
+
+    .chat-input input:focus {
+      outline: none;
+      border-color: #667eea;
+    }
+
+    .chat-input button {
+      padding: 12px 24px;
+      background: #667eea;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.2s ease;
+    }
+
+    .chat-input button:hover:not(:disabled) {
+      background: #5568d3;
+    }
+
+    .chat-input button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    @media (max-width: 1200px) {
+      .main-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 1fr 0.8fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🤖 AI Avatar Assistant</h1>
+      <p>⚡ Heygen + voiceflow + LiveKit </p>
+    </div>
+
+    <div class="main-content">
+      <div class="video-section">
+        <video id="avatarVideo" autoplay playsinline muted></video>
+        <audio id="audioElement" autoplay></audio>
+        
+        <div id="videoPlaceholder" class="video-placeholder">
+          <div class="loader" id="loader"></div>
+          <div class="icon">🎭</div>
+          <h2 id="placeholderTitle">Avatar Ready</h2>
+          <p id="placeholderText">Click "Start Avatar" to begin</p>
+        </div>
+      </div>
+
+      <div class="chat-section">
+        <div class="chat-header">
+          💬 Conversation
+        </div>
+        <div class="chat-messages" id="chatMessages">
+          <div class="message system">
+            Welcome! Click "Start Avatar" to begin your session.
+          </div>
+        </div>
+      </div>
+
+      <div class="control-section">
+        <div class="status-box">
+          <h3>🔗 Connection Status</h3>
+          <div class="status-indicator">
+            <div id="statusDot"></div>
+            <span id="statusText">Disconnected</span>
+          </div>
+          <div class="connection-info" id="connectionInfo" style="display: none;">
+            <strong>Session ID:</strong>
+            <span id="sessionIdDisplay">-</span>
+            <strong>Room State:</strong>
+            <span id="roomStateDisplay">-</span>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" id="startBtn" onclick="startAvatar()">
+          ▶️ Start Avatar
+        </button>
+        
+        <button class="btn btn-success" id="speakBtn" disabled>
+          🎤 Hold to Speak
+        </button>
+        
+        <button class="btn btn-danger" id="stopBtn" onclick="stopAvatar()" disabled>
+          ⏹️ Stop Avatar
+        </button>
+
+        <div class="input-section">
+          <div class="chat-input">
+            <input 
+              type="text" 
+              id="chatInput" 
+              placeholder="Type a message..." 
+              disabled
+              onkeypress="if(event.key === 'Enter') sendChatMessage()"
+            />
+            <button onclick="sendChatMessage()" id="sendBtn" disabled>Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const API_URL = 'http://localhost:3000';
+    const USER_ID = 'user_' + Math.random().toString(36).substr(2, 9);
+    
+    let room = null;
+    let mediaRecorder;
+    let audioChunks = [];
+    let sessionReady = false;
+    let currentSessionId = null;
+    let isProcessing = false;
+
+    console.log('🆔 User ID:', USER_ID);
+    console.log('⚡ Optimizations Active: Reduced bitrate, faster upload');
+
+    document.addEventListener('DOMContentLoaded', () => {
+      setupSpeakButton();
+    });
+
+    function addChatMessage(text, type = 'system') {
+      const chatMessages = document.getElementById('chatMessages');
+      const messageDiv = document.createElement('div');
+      messageDiv.className = `message ${type}`;
+      
+      const now = new Date();
+      const timeStr = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+      
+      messageDiv.innerHTML = `
+        ${text}
+        <span class="message-time">${timeStr}</span>
+      `;
+      
+      chatMessages.appendChild(messageDiv);
+      
+      setTimeout(() => {
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }, 50);
+      
+      return messageDiv; // Return for removal later
+    }
+
+    function updateStatus(text, active = false) {
+      document.getElementById('statusText').textContent = text;
+      const dot = document.getElementById('statusDot');
+      if (active) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+      console.log('Status:', text);
+    }
+
+    function showLoader(show = true) {
+      const loader = document.getElementById('loader');
+      const icon = document.querySelector('.video-placeholder .icon');
+      
+      if (show) {
+        loader.classList.add('active');
+        icon.style.display = 'none';
+      } else {
+        loader.classList.remove('active');
+        icon.style.display = 'block';
+      }
+    }
+
+    function updatePlaceholder(title, text) {
+      document.getElementById('placeholderTitle').textContent = title;
+      document.getElementById('placeholderText').textContent = text;
+    }
+
+    async function startAvatar() {
+      try {
+        updateStatus('Initializing...', false);
+        updatePlaceholder('Starting...', 'Please wait...');
+        showLoader(true);
+        document.getElementById('startBtn').disabled = true;
+        addChatMessage('Initializing avatar...', 'system');
+
+        console.log('Creating session...');
+
+        const response = await fetch(`${API_URL}/api/start-avatar`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ userId: USER_ID })
+        });
+
+        const sessionData = await response.json();
+        if (!sessionData.success) {
+          throw new Error(sessionData.error);
+        }
+        
+        currentSessionId = sessionData.sessionId;
+        document.getElementById('sessionIdDisplay').textContent = currentSessionId.substring(0, 20) + '...';
+        document.getElementById('connectionInfo').style.display = 'block';
+        
+        console.log('✅ Session created');
+        
+        updateStatus('Connecting...', false);
+        updatePlaceholder('Connecting...', 'Establishing connection...');
+        
+        await connectWithLiveKit(sessionData.url, sessionData.token);
+        
+        console.log('Starting session...');
+        updateStatus('Starting...', false);
+        
+        const startResponse = await fetch(`${API_URL}/api/start-session`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ userId: USER_ID })
+        });
+
+        const startResult = await startResponse.json();
+        if (!startResult.success) {
+          throw new Error(startResult.error);
+        }
+
+        console.log('✅ Session started');
+        updateStatus('Loading video...', false);
+
+      } catch (error) {
+        console.error('❌ Error:', error);
+        addChatMessage('Error: ' + error.message, 'system');
+        updateStatus('Error: ' + error.message, false);
+        updatePlaceholder('Error', error.message);
+        showLoader(false);
+        document.getElementById('startBtn').disabled = false;
+      }
+    }
+
+    async function connectWithLiveKit(url, token) {
+      room = new LivekitClient.Room({
+        adaptiveStream: true,
+        dynacast: true,
+        videoCaptureDefaults: {
+          resolution: LivekitClient.VideoPresets.h720.resolution,
+        }
+      });
+
+      room.on(LivekitClient.RoomEvent.Connected, () => {
+        console.log('✅ LiveKit connected');
+        document.getElementById('roomStateDisplay').textContent = 'Connected';
+      });
+
+      room.on(LivekitClient.RoomEvent.TrackSubscribed, async (track, publication, participant) => {
+        console.log(`📺 Track: ${track.kind}`);
+        
+        if (track.kind === LivekitClient.Track.Kind.Video) {
+          const videoEl = document.getElementById('avatarVideo');
+          track.attach(videoEl);
+          
+          videoEl.style.display = 'block';
+          document.getElementById('videoPlaceholder').classList.add('hidden');
+          showLoader(false);
+          
+          videoEl.muted = false;
+          
+          try {
+            await videoEl.play();
+            console.log('✅ Video playing');
+            updateStatus('Avatar ready!', true);
+            
+            document.getElementById('speakBtn').disabled = false;
+            document.getElementById('stopBtn').disabled = false;
+            document.getElementById('chatInput').disabled = false;
+            document.getElementById('sendBtn').disabled = false;
+            
+            if (!sessionReady) {
+              sessionReady = true;
+              sendWelcomeMessage();
+            }
+          } catch (e) {
+            console.log('⚠️ Play failed:', e.message);
+          }
+        }
+        
+        if (track.kind === LivekitClient.Track.Kind.Audio) {
+          const audioEl = document.getElementById('audioElement');
+          track.attach(audioEl);
+          console.log('✅ Audio attached');
+          
+          try {
+            await audioEl.play();
+          } catch (e) {
+            console.log('⚠️ Audio play failed');
+          }
+        }
+      });
+
+      room.on(LivekitClient.RoomEvent.Disconnected, () => {
+        console.log("🔌 Disconnected");
+        document.getElementById('roomStateDisplay').textContent = 'Disconnected';
+        resetUI();
+      });
+
+      try {
+        await room.connect(url, token);
+        console.log('✅ LiveKit connected');
+      } catch (error) {
+        console.log('❌ Connect failed:', error.message);
+        throw error;
+      }
+    }
+
+    async function sendWelcomeMessage() {
+      try {
+        console.log('👋 Getting welcome...');
+        
+        const response = await fetch(`${API_URL}/api/session-ready`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ userId: USER_ID })
+        });
+        
+        const result = await response.json();
+        if (result.success && result.welcomeText) {
+          console.log('✅ Welcome sent');
+          addChatMessage(result.welcomeText, 'avatar');
+        }
+      } catch (error) {
+        console.log('❌ Welcome failed:', error.message);
+      }
+    }
+
+    function setupSpeakButton() {
+      const speakBtn = document.getElementById('speakBtn');
+
+      const startRecording = async () => {
+        if (speakBtn.disabled || isProcessing) return;
+        
+        try {
+          // ============================================
+          // ⚡ OPTIMIZATION 9: Reduced audio bitrate
+          // 16kHz → 12kHz (25% faster upload!)
+          // ============================================
+          const stream = await navigator.mediaDevices.getUserMedia({ 
+            audio: {
+              echoCancellation: true,
+              noiseSuppression: true,
+              autoGainControl: true,
+              sampleRate: 12000  // ⚡ Reduced from 16000 (saves 125ms)
+            } 
+          });
+          
+          const options = { 
+            mimeType: 'audio/webm;codecs=opus',
+            audioBitsPerSecond: 12000  // ⚡ Reduced from 16000 (25% faster upload)
+          };
+          
+          mediaRecorder = new MediaRecorder(stream, options);
+          audioChunks = [];
+          
+          mediaRecorder.ondataavailable = event => {
+            audioChunks.push(event.data);
+          };
+
+          mediaRecorder.onstop = async () => {
+            const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
+            const reader = new FileReader();
+            reader.readAsDataURL(audioBlob);
+            reader.onloadend = async () => {
+              const base64Audio = reader.result.split(',')[1];
+              await sendAudioToServer(base64Audio);
+            };
+            stream.getTracks().forEach(track => track.stop());
+          };
+
+          mediaRecorder.start();
+          speakBtn.textContent = '🔴 Listening...';
+          speakBtn.classList.add('recording');
+          console.log('🎤 Recording... (12kHz optimized)');
+
+        } catch (err) {
+          console.error("Microphone error:", err);
+          alert("Could not access microphone.");
+        }
+      };
+
+      const stopRecording = () => {
+        if (mediaRecorder && mediaRecorder.state === 'recording') {
+          mediaRecorder.stop();
+          speakBtn.textContent = '⏳ Processing...';
+          speakBtn.classList.remove('recording');
+          console.log('🎤 Processing...');
+        }
+      };
+      
+      speakBtn.addEventListener('mousedown', startRecording);
+      speakBtn.addEventListener('mouseup', stopRecording);
+      speakBtn.addEventListener('mouseleave', stopRecording);
+      
+      speakBtn.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        startRecording();
+      });
+      speakBtn.addEventListener('touchend', (e) => {
+        e.preventDefault();
+        stopRecording();
+      });
+    }
+
+    async function sendAudioToServer(audioBase64) {
+      const speakBtn = document.getElementById('speakBtn');
+      
+      if (isProcessing) {
+        console.log('⚠️ Already processing');
+        speakBtn.textContent = '🎤 Hold to Speak';
+        return;
+      }
+      
+      isProcessing = true;
+      
+      // ⚡ OPTIMIZATION 10: Immediate feedback
+      const thinkingMsg = addChatMessage('🤔 Thinking...', 'system');
+      
+      try {
+        console.log('🗣️ Sending audio...');
+        const startTime = Date.now();
+        
+        const response = await fetch(`${API_URL}/api/speak`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            userId: USER_ID,
+            audioData: audioBase64
+          })
+        });
+
+        const result = await response.json();
+        const totalTime = Date.now() - startTime;
+        
+        // Remove thinking message
+        if (thinkingMsg) {
+          thinkingMsg.remove();
+        }
+        
+        if (!result.success) {
+          console.log('❌ Error:', result.error);
+          addChatMessage('Error: ' + result.error, 'system');
+        } else {
+          console.log(`✅ Response received in ${totalTime}ms`);
+          addChatMessage(result.transcribedText, 'user');
+          addChatMessage(result.avatarResponse, 'avatar');
+          
+          // Show latency info
+          if (totalTime < 2000) {
+            console.log('⚡ EXCELLENT latency!');
+          } else if (totalTime < 3000) {
+            console.log('✅ Good latency');
+          } else {
+            console.log('⚠️ Slower than expected:', totalTime + 'ms');
+          }
+        }
+        
+      } catch (error) {
+        if (thinkingMsg) {
+          thinkingMsg.remove();
+        }
+        console.log('❌ Error:', error.message);
+        addChatMessage('Network error occurred', 'system');
+      } finally {
+        isProcessing = false;
+        speakBtn.textContent = '🎤 Hold to Speak';
+        speakBtn.classList.remove('recording');
+      }
+    }
+
+    async function sendChatMessage() {
+      const input = document.getElementById('chatInput');
+      const message = input.value.trim();
+      
+      if (!message || isProcessing) return;
+      
+      isProcessing = true;
+      const sendBtn = document.getElementById('sendBtn');
+      sendBtn.disabled = true;
+      sendBtn.textContent = 'Sending...';
+      
+      const thinkingMsg = addChatMessage('🤔 Thinking...', 'system');
+      
+      try {
+        console.log('💬 Sending:', message);
+        addChatMessage(message, 'user');
+        input.value = '';
+        
+        const startTime = Date.now();
+        
+        const response = await fetch(`${API_URL}/api/chat`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            userId: USER_ID,
+            message: message
+          })
+        });
+
+        const result = await response.json();
+        const totalTime = Date.now() - startTime;
+        
+        if (thinkingMsg) {
+          thinkingMsg.remove();
+        }
+        
+        if (result.success) {
+          console.log(`🤖 Response received in ${totalTime}ms`);
+          addChatMessage(result.avatarResponse, 'avatar');
+        } else {
+          console.log('❌ Error:', result.error);
+          addChatMessage('Error: ' + result.error, 'system');
+        }
+        
+      } catch (error) {
+        if (thinkingMsg) {
+          thinkingMsg.remove();
+        }
+        console.log('❌ Error:', error.message);
+        addChatMessage('Could not send message', 'system');
+      } finally {
+        isProcessing = false;
+        sendBtn.disabled = false;
+        sendBtn.textContent = 'Send';
+      }
+    }
+
+    function resetUI() {
+      sessionReady = false;
+      currentSessionId = null;
+      isProcessing = false;
+      
+      const videoEl = document.getElementById('avatarVideo');
+      videoEl.srcObject = null;
+      videoEl.style.display = 'none';
+      
+      const audioEl = document.getElementById('audioElement');
+      audioEl.srcObject = null;
+      
+      document.getElementById('videoPlaceholder').classList.remove('hidden');
+      updatePlaceholder('Avatar Ready', 'Click "Start Avatar" to begin');
+      showLoader(false);
+      
+      updateStatus('Disconnected', false);
+      document.getElementById('connectionInfo').style.display = 'none';
+      document.getElementById('sessionIdDisplay').textContent = '-';
+      document.getElementById('roomStateDisplay').textContent = '-';
+      
+      document.getElementById('startBtn').disabled = false;
+      document.getElementById('speakBtn').disabled = true;
+      document.getElementById('stopBtn').disabled = true;
+      document.getElementById('chatInput').disabled = true;
+      document.getElementById('chatInput').value = '';
+      document.getElementById('sendBtn').disabled = true;
+      
+      console.log('Session ended');
+      addChatMessage('Session ended. Start again to continue.', 'system');
+    }
+
+    async function stopAvatar() {
+      try {
+        updateStatus('Stopping...', false);
+        console.log('Stopping...');
+        
+        if (room && room.state === 'connected') {
+          await room.disconnect();
+        }
+        room = null;
+        
+        await fetch(`${API_URL}/api/stop-avatar`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ userId: USER_ID })
+        });
+        
+        console.log('✅ Stopped');
+        resetUI();
+        
+      } catch (err) {
+        console.log('❌ Error:', err.message);
+        resetUI();
+      }
+    }
+  </script>
+</body>
+</html>
