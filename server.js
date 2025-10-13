@@ -720,8 +720,17 @@ app.post('/api/stop-avatar', async (req, res) => {
   }
 });
 
+// Serve static files (HTML, CSS, JS, images, etc.)
+app.use(express.static(__dirname));
+
+// Handle root route
 app.get('/', (req, res) => {
-  res.sendFile(join(__dirname, 'web', 'index.html'));
+  res.sendFile(join(__dirname, 'index.html'));
+});
+
+// Handle all other routes (in case of frontend routing)
+app.get('*', (req, res) => {
+  res.sendFile(join(__dirname, 'index.html'));
 });
 
 // ============================================
