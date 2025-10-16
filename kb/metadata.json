@@ -1,0 +1,461 @@
+{
+  "Bosch Case Study.pdf": {
+    "document_id": "case-study-bosch",
+    "product": "all",
+    "referenced_products": ["gen12-servers"],
+    "category": "case-study",
+    "document_type": "customer-case-study",
+    "priority": "medium",
+    "generation": "gen12",
+    "processor": "intel-xeon-6",
+    "management": "ilo7",
+    "topics": ["manufacturing", "iot", "industry-40", "automation", "edge"],
+    "use_cases": ["manufacturing", "iot", "edge-computing", "automation"],
+    "published_date": "2025",
+    "page_count": "unknown",
+    "chunk_strategy": {
+      "recommended_chunk_size": 600,
+      "overlap": 100,
+      "has_semantic_sections": true,
+      "section_types": ["customer-challenge", "solution", "results", "testimonial"]
+    },
+    "industry": "manufacturing",
+    "customer": "Bosch",
+    "search_keywords": ["case study", "bosch", "manufacturing", "iot", "industry 4.0", "customer success"]
+  },
+
+  "Case Study_Comline_self-service-transformation.pdf": {
+    "document_id": "case-study-comline",
+    "product": "all",
+    "referenced_products": ["gen11-servers", "gen12-servers"],
+    "category": "case-study",
+    "document_type": "customer-case-study",
+    "priority": "medium",
+    "generation": "all",
+    "processor": "all",
+    "management": "all",
+    "topics": ["digital-transformation", "self-service", "modernization", "business-transformation"],
+    "use_cases": ["digital-transformation", "modernization", "self-service"],
+    "published_date": "2025",
+    "page_count": "unknown",
+    "chunk_strategy": {
+      "recommended_chunk_size": 600,
+      "overlap": 100,
+      "has_semantic_sections": true,
+      "section_types": ["customer-challenge", "solution", "results", "testimonial"]
+    },
+    "customer": "Comline",
+    "search_keywords": ["case study", "comline", "self-service", "digital transformation", "customer success"]
+  },
+
+  "Case Study_Ducks Unlimited Canada.pdf": {
+    "document_id": "case-study-ducks-unlimited",
+    "product": "all",
+    "referenced_products": ["proliant-servers"],
+    "category": "case-study",
+    "document_type": "customer-case-study",
+    "priority": "medium",
+    "generation": "all",
+    "processor": "all",
+    "management": "all",
+    "topics": ["non-profit", "conservation", "data-management", "sustainability"],
+    "use_cases": ["data-management", "conservation", "non-profit"],
+    "published_date": "2025",
+    "page_count": "unknown",
+    "chunk_strategy": {
+      "recommended_chunk_size": 600,
+      "overlap": 100,
+      "has_semantic_sections": true,
+      "section_types": ["customer-challenge", "solution", "results", "testimonial"]
+    },
+    "industry": "non-profit",
+    "customer": "Ducks Unlimited Canada",
+    "location": "Canada",
+    "search_keywords": ["case study", "ducks unlimited", "non-profit", "conservation", "customer success"]
+  },
+
+  "Case Study_Medizinisches Labor Nord .pdf": {
+    "document_id": "case-study-medical-lab",
+    "product": "all",
+    "referenced_products": ["DL380", "gen12-servers"],
+    "category": "case-study",
+    "document_type": "customer-case-study",
+    "priority": "medium",
+    "generation": "gen12",
+    "processor": "intel-xeon-6",
+    "management": "ilo7",
+    "topics": ["healthcare", "diagnostics", "imaging", "high-availability", "backup-recovery"],
+    "use_cases": ["healthcare", "diagnostics", "laboratory", "imaging-systems", "mission-critical"],
+    "published_date": "2025",
+    "page_count": 6,
+    "chunk_strategy": {
+      "recommended_chunk_size": 600,
+      "overlap": 100,
+      "has_semantic_sections": true,
+      "section_types": ["customer-challenge", "solution", "results", "testimonial"]
+    },
+    "key_features": ["30-percent-throughput-increase", "high-availability", "terabyte-file-handling", "backup-recovery"],
+    "industry": "healthcare",
+    "customer": "Medizinisches Labor Nord",
+    "location": "Germany",
+    "search_keywords": ["case study", "healthcare", "medical", "diagnostics", "laboratory", "imaging", "customer success"]
+  },
+
+  "HPE Next-Gen .pdf": {
+    "document_id": "nextgen-openbmc-guide",
+    "product": "all",
+    "referenced_products": ["modular-servers", "ocp-dc-mhs"],
+    "category": "technical-guide",
+    "document_type": "technical-ebook",
+    "priority": "medium",
+    "generation": "all",
+    "processor": "all",
+    "management": "openbmc",
+    "topics": ["openbmc", "ocp", "dc-mhs", "modular-servers", "open-compute"],
+    "use_cases": ["cloud-scale", "service-providers", "modular-infrastructure", "open-source-management"],
+    "published_date": "2025",
+    "page_count": 35,
+    "chunk_strategy": {
+      "recommended_chunk_size": 1000,
+      "overlap": 200,
+      "has_semantic_sections": true,
+      "section_types": ["chapters", "technical-details", "use-cases"]
+    },
+    "key_features": ["openbmc", "ocp-dc-mhs", "modular-architecture", "redfish-api", "open-source"],
+    "search_keywords": ["openbmc", "open compute project", "ocp", "dc-mhs", "modular servers", "redfish", "bmc"]
+  },
+
+  "HPE Proliant 12th Gen.pdf": {
+    "document_id": "gen12-overview-brief",
+    "product": "all",
+    "referenced_products": ["DL380", "DL380a", "DL384", "ML350"],
+    "category": "overview",
+    "document_type": "product-brief",
+    "priority": "high",
+    "generation": "gen12",
+    "processor": "intel-xeon-6|nvidia-gh200",
+    "management": "ilo7",
+    "topics": ["overview", "security", "ai", "performance", "sustainability"],
+    "use_cases": ["ai-inference", "ai-training", "modernization", "consolidation"],
+    "published_date": "2025",
+    "page_count": 2,
+    "chunk_strategy": {
+      "recommended_chunk_size": 500,
+      "overlap": 100,
+      "has_semantic_sections": false,
+      "section_types": ["overview", "benefits"]
+    },
+    "key_features": ["silicon-root-of-trust", "7-to-1-consolidation", "65-percent-power-savings"],
+    "search_keywords": ["gen12", "overview", "benefits", "modernization", "consolidation", "security"]
+  },
+
+  "HPE Proliant AI Inference Benchmarks.pdf": {
+    "document_id": "mlperf-v51-benchmarks",
+    "product": "DL380a",
+    "referenced_products": ["DL380a", "DL385", "DL384", "ML30"],
+    "category": "performance",
+    "document_type": "benchmark-results",
+    "priority": "high",
+    "generation": "gen12",
+    "processor": "intel-xeon-6|nvidia-h200|nvidia-rtx",
+    "management": "ilo7",
+    "topics": ["ai-inference", "mlperf", "benchmarks", "performance", "llm", "dlrm"],
+    "use_cases": ["ai-inference", "llm-deployment", "recommendation-systems"],
+    "published_date": "2025-09",
+    "page_count": 2,
+    "chunk_strategy": {
+      "recommended_chunk_size": 400,
+      "overlap": 100,
+      "has_semantic_sections": true,
+      "section_types": ["benchmark-results", "performance-metrics"]
+    },
+    "key_features": ["mlperf-datacenter-v5.1", "number-1-rankings", "h200-nvl", "llama-benchmarks", "dlrm-benchmarks"],
+    "benchmark_details": {
+      "mlperf_version": "v5.1",
+      "date": "2025-09-09",
+      "models_tested": ["llama2-70b", "llama3.1-8b", "mixtral-8x7b", "dlrm-v2", "whisper"],
+      "gpu_types": ["nvidia-h200-nvl", "nvidia-rtx-pro-6000-blackwell", "nvidia-rtx-4000-ada"]
+    },
+    "search_keywords": ["mlperf", "ai inference", "benchmarks", "world records", "llama", "dlrm", "h200", "performance"]
+  },
+
+  "HPE ProLiant Compute .pdf": {
+    "document_id": "gen12-family-guide",
+    "product": "all",
+    "referenced_products": ["DL380", "DL380a", "DL384", "DL320", "DL340", "DL360", "ML350"],
+    "category": "specs",
+    "document_type": "family-guide",
+    "priority": "high",
+    "generation": "gen12",
+    "processor": "intel-xeon-6",
+    "management": "ilo7",
+    "topics": ["specs", "ai", "security", "silicon-root-of-trust", "sustainability", "power-efficiency"],
+    "use_cases": ["ai-inference", "ai-training", "virtualization", "traditional-workloads", "gpu-acceleration"],
+    "published_date": "2025",
+    "page_count": 20,
+    "chunk_strategy": {
+      "recommended_chunk_size": 1000,
+      "overlap": 200,
+      "has_semantic_sections": true,
+      "section_types": ["product-comparison-tables", "specifications", "features"]
+    },
+    "key_features": ["intel-xeon-6", "ilo7", "8tb-memory", "pcie-gen5", "energy-star"],
+    "search_keywords": ["gen12", "intel xeon 6", "ilo7", "specifications", "comparison", "rack servers", "tower servers"]
+  },
+
+  "HPE Proliant Gen12 World Records.pdf": {
+    "document_id": "mlperf-v50-benchmarks",
+    "product": "DL380a",
+    "referenced_products": ["DL380a", "DL384"],
+    "category": "performance",
+    "document_type": "benchmark-results",
+    "priority": "high",
+    "generation": "gen12",
+    "processor": "intel-xeon-6|nvidia-gh200|nvidia-h200",
+    "management": "ilo7",
+    "topics": ["ai-inference", "mlperf", "benchmarks", "performance", "stable-diffusion", "llama"],
+    "use_cases": ["ai-inference", "image-generation", "llm-deployment"],
+    "published_date": "2025-04",
+    "page_count": 2,
+    "chunk_strategy": {
+      "recommended_chunk_size": 400,
+      "overlap": 100,
+      "has_semantic_sections": true,
+      "section_types": ["benchmark-results", "performance-comparison"]
+    },
+    "key_features": ["23-world-records", "mlperf-datacenter-v5.0", "gh200-nvl2", "stable-diffusion-xl"],
+    "benchmark_details": {
+      "mlperf_version": "v5.0",
+      "date": "2025-04-02",
+      "models_tested": ["stable-diffusion-xl", "llama2-70b", "mixtral-8x7b", "resnet50", "retinanet", "gpt-j"],
+      "gpu_types": ["nvidia-gh200-nvl2", "nvidia-h200-nvl", "nvidia-l40s"]
+    },
+    "search_keywords": ["mlperf", "world records", "ai inference", "stable diffusion", "gh200", "performance", "benchmarks"]
+  },
+
+  "HPE Proliant Modern Infra Solution Brief.pdf": {
+    "document_id": "modern-infrastructure-brief",
+    "product": "all",
+    "referenced_products": ["all-gen12"],
+    "category": "solution-brief",
+    "document_type": "solution-brief",
+    "priority": "high",
+    "generation": "gen12",
+    "processor": "all",
+    "management": "all",
+    "topics": ["modernization", "infrastructure", "hybrid-cloud", "consolidation", "tco"],
+    "use_cases": ["modernization", "infrastructure-refresh", "consolidation", "hybrid-cloud"],
+    "published_date": "2025",
+    "page_count": "unknown",
+    "chunk_strategy": {
+      "recommended_chunk_size": 800,
+      "overlap": 150,
+      "has_semantic_sections": true,
+      "section_types": ["benefits", "use-cases", "modernization-strategy"]
+    },
+    "key_features": ["modernization", "consolidation", "tco-reduction", "hybrid-cloud"],
+    "search_keywords": ["modern infrastructure", "modernization", "consolidation", "infrastructure refresh", "tco"]
+  },
+
+  "HPE Proliant Solution Brief.pdf": {
+    "document_id": "proliant-solution-overview",
+    "product": "all",
+    "referenced_products": ["all"],
+    "category": "solution-brief",
+    "document_type": "solution-brief",
+    "priority": "high",
+    "generation": "all",
+    "processor": "all",
+    "management": "all",
+    "topics": ["overview", "solutions", "workloads", "benefits"],
+    "use_cases": ["all"],
+    "published_date": "2025",
+    "page_count": "unknown",
+    "chunk_strategy": {
+      "recommended_chunk_size": 800,
+      "overlap": 150,
+      "has_semantic_sections": true,
+      "section_types": ["solutions", "benefits", "use-cases"]
+    },
+    "key_features": ["proliant-overview", "solution-portfolio", "workload-optimization"],
+    "search_keywords": ["proliant", "solution brief", "overview", "workloads", "benefits"]
+  },
+
+  "HPE Proliant_Accelerate Agility Solution Brief.pdf": {
+    "document_id": "compute-ops-management",
+    "product": "all",
+    "referenced_products": ["all"],
+    "category": "management",
+    "document_type": "solution-brief",
+    "priority": "high",
+    "generation": "all",
+    "processor": "all",
+    "management": "compute-ops-management",
+    "topics": ["management", "automation", "ai-insights", "cloud-console", "sustainability"],
+    "use_cases": ["server-management", "lifecycle-management", "distributed-environments", "automation"],
+    "published_date": "2024-2025",
+    "page_count": 8,
+    "chunk_strategy": {
+      "recommended_chunk_size": 800,
+      "overlap": 150,
+      "has_semantic_sections": true,
+      "section_types": ["features", "benefits", "use-cases"]
+    },
+    "key_features": ["hpe-compute-ops-management", "ai-driven-insights", "zero-trust-security", "sustainability-reporting", "cloud-console"],
+    "search_keywords": ["compute ops management", "COM", "server management", "automation", "cloud console", "ai insights", "sustainability"]
+  },
+
+  "HPE Proliant_Sustainability Impact.pdf": {
+    "document_id": "sustainability-esg-report",
+    "product": "all",
+    "referenced_products": ["all-gen12"],
+    "category": "business-value",
+    "document_type": "esg-report",
+    "priority": "medium",
+    "generation": "gen12",
+    "processor": "all",
+    "management": "all",
+    "topics": ["sustainability", "power-efficiency", "carbon-reduction", "energy-star", "tco"],
+    "use_cases": ["sustainability-goals", "cost-reduction", "modernization"],
+    "published_date": "2025",
+    "page_count": 12,
+    "chunk_strategy": {
+      "recommended_chunk_size": 800,
+      "overlap": 150,
+      "has_semantic_sections": true,
+      "section_types": ["analysis", "recommendations", "metrics"]
+    },
+    "key_features": ["65-percent-power-savings", "energy-star", "ashrae-compliance", "sustainability-metrics"],
+    "search_keywords": ["sustainability", "power savings", "energy efficiency", "carbon footprint", "tco", "green computing"]
+  },
+
+  "HPE Proliant_Virtualization Solutions  .pdf": {
+    "document_id": "virtualization-morpheus",
+    "product": "all",
+    "referenced_products": ["DL380", "DL380a", "DL384", "DL385", "all-gen12"],
+    "category": "virtualization",
+    "document_type": "solution-brief",
+    "priority": "high",
+    "generation": "gen12",
+    "processor": "intel-xeon-6",
+    "management": "morpheus-vm-essentials",
+    "topics": ["virtualization", "vmware-alternative", "hvm", "kvm", "cost-savings", "migration"],
+    "use_cases": ["virtualization", "vmware-migration", "hybrid-cloud", "vdi"],
+    "published_date": "2025",
+    "page_count": 8,
+    "chunk_strategy": {
+      "recommended_chunk_size": 800,
+      "overlap": 150,
+      "has_semantic_sections": true,
+      "section_types": ["features", "benefits", "migration-strategy", "cost-comparison"]
+    },
+    "key_features": ["morpheus-vm-essentials", "90-percent-cost-savings", "vmware-esxi-support", "hvm-kvm", "socket-based-licensing", "dual-hypervisor"],
+    "search_keywords": ["virtualization", "morpheus", "vmware alternative", "hvm", "kvm", "cost savings", "migration", "hypervisor"]
+  },
+
+  "hpe-proliant-gen11.pdf": {
+    "document_id": "gen11-family-guide",
+    "product": "all",
+    "referenced_products": ["DL360", "DL365", "DL380", "DL385", "DL380a", "DL320", "DL325", "DL345", "ML350", "RL300"],
+    "category": "specs",
+    "document_type": "family-guide",
+    "priority": "high",
+    "generation": "gen11",
+    "processor": "intel-xeon-scalable|amd-epyc-9004",
+    "management": "ilo6",
+    "topics": ["specs", "rack-servers", "tower-servers", "cloud-native", "performance", "gpu-support"],
+    "use_cases": ["virtualization", "ai-ml", "database", "vdi", "edge-computing", "traditional-workloads"],
+    "published_date": "2023-2024",
+    "page_count": 20,
+    "chunk_strategy": {
+      "recommended_chunk_size": 1000,
+      "overlap": 200,
+      "has_semantic_sections": true,
+      "section_types": ["product-comparison-tables", "specifications", "features", "workload-descriptions"]
+    },
+    "key_features": ["4th-gen-intel-xeon", "amd-epyc-9004", "ilo6", "pcie-gen5", "ddr5-memory", "ashrae-a3-a4"],
+    "search_keywords": ["gen11", "specifications", "comparison", "intel xeon scalable", "amd epyc", "rack servers", "tower servers"]
+  },
+
+  "PhoenixNAP Case Study.pdf": {
+    "document_id": "case-study-phoenixnap",
+    "product": "all",
+    "referenced_products": ["modular-servers", "ocp-dc-mhs"],
+    "category": "case-study",
+    "document_type": "customer-case-study",
+    "priority": "medium",
+    "generation": "all",
+    "processor": "all",
+    "management": "openbmc",
+    "topics": ["service-provider", "colocation", "cloud-services", "modular-servers", "ocp"],
+    "use_cases": ["service-provider", "cloud-services", "colocation", "bare-metal"],
+    "published_date": "2025",
+    "page_count": "unknown",
+    "chunk_strategy": {
+      "recommended_chunk_size": 600,
+      "overlap": 100,
+      "has_semantic_sections": true,
+      "section_types": ["customer-challenge", "solution", "results", "testimonial"]
+    },
+    "industry": "service-provider",
+    "customer": "phoenixNAP",
+    "search_keywords": ["case study", "phoenixnap", "service provider", "colocation", "cloud services", "customer success"]
+  },
+
+  "Top 5 Reasons for Server Modernization.pdf": {
+    "document_id": "modernization-top5-reasons",
+    "product": "all",
+    "referenced_products": ["gen12-servers"],
+    "category": "business-value",
+    "document_type": "infographic",
+    "priority": "high",
+    "generation": "gen12",
+    "processor": "all",
+    "management": "all",
+    "topics": ["modernization", "roi", "consolidation", "security", "performance", "sustainability"],
+    "use_cases": ["modernization", "infrastructure-refresh", "consolidation"],
+    "published_date": "2025",
+    "page_count": 2,
+    "chunk_strategy": {
+      "recommended_chunk_size": 400,
+      "overlap": 50,
+      "has_semantic_sections": true,
+      "section_types": ["reasons", "benefits", "statistics"]
+    },
+    "key_features": ["modernization-benefits", "roi", "consolidation", "security-improvements", "performance-gains"],
+    "search_keywords": ["modernization", "top 5 reasons", "server refresh", "roi", "consolidation", "benefits"]
+  },
+
+  "web-content.json": {
+    "document_id": "web-scraped-content",
+    "product": "all",
+    "referenced_products": ["DL380", "DL380a", "DL384", "DL145", "DL360", "ML30", "ML350", "XD685"],
+    "category": "web-content",
+    "document_type": "web-scraping",
+    "priority": "high",
+    "generation": "all",
+    "processor": "all",
+    "management": "all",
+    "topics": ["product-pages", "marketing", "features", "benefits", "ai", "edge", "security"],
+    "use_cases": ["all"],
+    "published_date": "2025",
+    "page_count": "variable",
+    "chunk_strategy": {
+      "recommended_chunk_size": 600,
+      "overlap": 100,
+      "has_semantic_sections": true,
+      "section_types": ["product-overview", "features", "benefits", "specifications"]
+    },
+    "key_features": ["current-web-content", "marketing-messaging", "product-positioning", "feature-highlights"],
+    "content_sources": [
+      "hpe.com/proliant",
+      "hpe.com/dl380a-gen12",
+      "hpe.com/dl384-gen12",
+      "hpe.com/dl145-gen11",
+      "hpe.com/compute-ops-management",
+      "hpe.com/xd685",
+      "hpe.com/ilo"
+    ],
+    "search_keywords": ["product pages", "marketing", "features", "benefits", "official content", "latest info"]
+  }
+}

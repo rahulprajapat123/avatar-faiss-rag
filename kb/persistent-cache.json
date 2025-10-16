@@ -1,0 +1,2550 @@
+{
+  "best server for virtualization": {
+    "responseText": "For virtualization, the HPE ProLiant DL380 Gen10 server is a popular choice. It offers high performance, scalability, and reliability for virtualized environments. With support for multiple processors, large memory capacity, and flexible storage options, the DL380 Gen10 can handle a variety of virtualized workloads efficiently. Additionally, HPE offers management tools like HPE OneView to simplify virtualization deployment and management tasks. Overall, the HPE ProLiant DL380 Gen10 is a",
+    "sources": [
+      {
+        "source": "HPE Proliant_Virtualization Solutions  .pdf",
+        "score": "0.803"
+      },
+      {
+        "source": "HPE Proliant_Virtualization Solutions  .pdf",
+        "score": "0.796"
+      }
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.802978516,
+    "timestamp": 1760371398020
+  },
+  "vmware alternative for hpe servers": {
+    "responseText": "HPE offers its own virtualization solution called HPE Morpheus VM Essentials Software, which is designed to work seamlessly with HPE servers. This software is a cost-effective alternative to traditional VMware licensing models, offering up to 90% cost reduction. It is cloud-ready and can be integrated with HPE's Private Cloud portfolio, supporting various workloads. HPE Morpheus VM Essentials Software provides a scalable foundation that can grow with your business, making it a suitable alternative for virtualization on",
+    "sources": [
+      {
+        "source": "HPE Proliant_Virtualization Solutions  .pdf",
+        "score": "0.837"
+      },
+      {
+        "source": "HPE Proliant_Virtualization Solutions  .pdf",
+        "score": "0.824"
+      }
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.836975098,
+    "timestamp": 1760371400396
+  },
+  "how to configure hpe ilo?": {
+    "responseText": "To configure HPE iLO, you can access the iLO web interface by entering the iLO IP address in a web browser. Log in using the default credentials or those you have set up. From there, you can configure settings such as network settings, user accounts, security, and firmware updates. Additionally, you can use the HPE iLO RESTful API for programmatic configuration and management. This API allows you to automate tasks and integrate iLO management into your existing tools and processes.",
+    "sources": [
+      {
+        "source": "hpe-proliant-gen11.pdf",
+        "score": "0.864"
+      },
+      {
+        "source": "HPE ProLiant Compute .pdf",
+        "score": "0.860"
+      }
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.864257812,
+    "timestamp": 1760371404391
+  },
+  "ilo management features": {
+    "responseText": "HPE Integrated Lights-Out (iLO) management features provide remote management capabilities for HPE ProLiant servers. iLO allows administrators to monitor server health, perform remote maintenance tasks, and troubleshoot issues without physically being present at the server location. Features include remote console access, power management, firmware updates, and proactive alerting. iLO Advanced licenses offer additional capabilities such as virtual media, scripting, and remote graphical console. This comprehensive management tool enhances server efficiency, reduces downtime, and improves overall",
+    "sources": [
+      {
+        "source": "HPE Proliant_Accelerate Agility Solution Brief.pdf",
+        "score": "0.778"
+      },
+      {
+        "source": "HPE Proliant_Accelerate Agility Solution Brief.pdf",
+        "score": "0.771"
+      }
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.778320372,
+    "timestamp": 1760371407679
+  },
+  "hpe oneview support": {
+    "responseText": "HPE ProLiant ML350 Gen10 servers support HPE OneView Standard for management. Additionally, HPE OneView Advanced is an optional feature that can be added for enhanced management capabilities.",
+    "sources": [
+      {
+        "source": "hpe-proliant-gen11.pdf",
+        "score": "0.846"
+      },
+      {
+        "source": "HPE ProLiant Compute .pdf",
+        "score": "0.829"
+      }
+    ],
+    "usedRAG": true,
+    "classification": "knowledge_base",
+    "confidence": 0.84564209,
+    "timestamp": 1760371409513
+  },
+  "customer case studies": {
+    "responseText": "HPE customer success stories showcase how organizations like Carnival Cruise Line, St. Jude Children’s Research Hospital, Toyo Tire, and Lawrence Berkeley National Laboratory are leveraging HPE networking, AI, and hybrid cloud solutions to drive innovation and achieve their business goals. These case studies highlight the transformative impact of technology in various industries, from enhancing connectivity in cruise vacations to unlocking new insights in medical research and improving efficiency in automotive simulations.",
+    "sources": [
+      {
+        "source": "dataset_website-content-crawler_2025-09-30_08-58-49-651.json",
+        "score": "0.833"
+      },
+      {
+        "source": "dataset_website-content-crawler_2025-09-30_08-58-49-651.json",
+        "score": "0.794"
+      }
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.832763553,
+    "timestamp": 1760371414998
+  },
+  "who uses hpe proliant?": {
+    "responseText": "phoenixNAP is an example of a company that uses HPE ProLiant servers. They were the first worldwide customer to order and deploy HPE ProLiant Gen12 SP servers in their production environment.",
+    "sources": [
+      {
+        "source": "PhoenixNAP Case Study.pdf",
+        "score": "0.861"
+      },
+      {
+        "source": "PhoenixNAP Case Study.pdf",
+        "score": "0.849"
+      }
+    ],
+    "usedRAG": true,
+    "classification": "knowledge_base",
+    "confidence": 0.861084104,
+    "timestamp": 1760371416835
+  },
+  "success stories dl380": {
+    "responseText": "The HPE ProLiant DL380 server has been a key component in many customer success stories across various industries. For specific examples and case studies highlighting the success of the DL380 server, you can visit the HPE Customer Case Studies page at https://www.hpe.com/in/en/customer-case-studies.html. There you will find how organizations have leveraged the DL380 server to achieve their business goals and drive innovation.",
+    "sources": [
+      {
+        "source": "dataset_website-content-crawler_2025-09-30_08-58-49-651.json",
+        "score": "0.800"
+      },
+      {
+        "source": "dataset_website-content-crawler_2025-09-30_08-58-49-651.json",
+        "score": "0.799"
+      }
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.799682617,
+    "timestamp": 1760371419588
+  },
+  "tell me success stories of dl380": {
+    "responseText": "The HPE ProLiant DL380 server is a popular choice for various businesses due to its performance, reliability, and versatility. Many organizations have experienced success using the DL380 for various applications such as virtualization, database management, and cloud computing. One success story involves a large financial institution that improved its data processing speed and efficiency by implementing a virtualized environment with HPE ProLiant DL380 servers. This resulted in cost savings and increased productivity for the organization. Overall, the DL380's",
+    "sources": [
+      {
+        "source": "dataset_website-content-crawler_2025-09-30_08-58-49-651.json",
+        "score": "0.795"
+      },
+      {
+        "source": "HPE Proliant AI Inference Benchmarks.pdf",
+        "score": "0.793"
+      }
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.794921935,
+    "timestamp": 1760371421950
+  },
+  "dl380 customer success": {
+    "responseText": "The HPE ProLiant DL380 is a popular server model known for its performance, reliability, and versatility. It is widely used in various industries and has a strong track record of customer success. Organizations that deploy the DL380 often benefit from its high processing power, storage capacity, and scalability, enabling them to efficiently run critical workloads and applications. Additionally, HPE provides comprehensive support and services to ensure the success of customers using the DL380, including proactive monitoring, maintenance, and troubleshooting assistance",
+    "sources": [
+      {
+        "source": "dataset_website-content-crawler_2025-09-30_08-58-49-651.json",
+        "score": "0.797"
+      },
+      {
+        "source": "HPE Proliant AI Inference Benchmarks.pdf",
+        "score": "0.789"
+      }
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.796569824,
+    "timestamp": 1760371424287
+  },
+  "dl360 customer stories": {
+    "responseText": "You can find customer stories related to the HPE ProLiant DL360 server on the HPE Customer Case Studies page. These stories showcase how customers across various industries have leveraged HPE solutions, including the DL360 server, to drive innovation and achieve their business goals. Visit the HPE Customer Case Studies page at the following URL: https://www.hpe.com/in/en/customer-case-studies.html",
+    "sources": [
+      {
+        "source": "dataset_website-content-crawler_2025-09-30_08-58-49-651.json",
+        "score": "0.788"
+      },
+      {
+        "source": "dataset_website-content-crawler_2025-09-30_08-58-49-651.json",
+        "score": "0.767"
+      }
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.788208,
+    "timestamp": 1760371426688
+  },
+  "latest hpe proliant updates": {
+    "responseText": "The latest updates for HPE ProLiant servers include the Gen12 SP servers, which offer cutting-edge hardware, automation capabilities, advanced remote management, and peerless technical support. These features empower businesses like phoenixNAP to achieve growth, efficiency, and expanded reach in offering reliable solutions to customers. For more information on the latest HPE ProLiant updates, you can visit HPE's official website at HPE.com.",
+    "sources": [
+      {
+        "source": "PhoenixNAP Case Study.pdf",
+        "score": "0.852"
+      },
+      {
+        "source": "HPE Proliant Solution Brief.pdf",
+        "score": "0.850"
+      }
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.852356076,
+    "timestamp": 1760371431799
+  },
+  "gen12 new features": {
+    "responseText": "Gen12 servers offer up to 41% better performance per watt compared to Gen10 systems, enabling more compute with lower energy consumption. They also allow for a 7:1 server consolidation and 65% power savings, freeing up data center capacity and reducing operational costs. Additionally, Gen12 servers are AI-optimized platforms, such as the HPE ProLiant Compute DL380a Gen12 and DL384 Gen12, purpose-built for generative AI and inference workloads. These features enable",
+    "sources": [
+      {
+        "source": "HPE Proliant_Virtualization Solutions  .pdf",
+        "score": "0.803"
+      },
+      {
+        "source": "HPE Proliant_Sustainability Impact.pdf",
+        "score": "0.792"
+      }
+    ],
+    "usedRAG": true,
+    "classification": "knowledge_base",
+    "confidence": 0.802551389,
+    "timestamp": 1760371434408
+  },
+  "recent announcements": {
+    "responseText": "I'm sorry, could you please provide more context or specify which recent announcements you are referring to?",
+    "sources": [
+      {
+        "source": "Case Study_Comline_self-service-transformation.pdf",
+        "score": "0.785"
+      },
+      {
+        "source": "dataset_website-content-crawler_2025-09-30_08-58-49-651.json",
+        "score": "0.758"
+      }
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.78527838,
+    "timestamp": 1760371436315
+  },
+  "tell me about gen12 servers": {
+    "responseText": "HPE ProLiant Gen12 servers deliver breakthrough performance with up to 41% better performance per watt compared to Gen10. They enable up to 7:1 server consolidation, 65% power savings, and are AI-optimized for generative AI and inference workloads. Gen12 ensures a secure foundation to power new workloads while addressing inefficiencies and streamlining operations with modular design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "hpe server portfolio": {
+    "responseText": "HPE offers a comprehensive array of server families designed to meet a wide variety of business needs. Some of the server portfolios include the HPE ProLiant DL family, HPE ProLiant ML family, HPE Apollo Systems, and HPE Superdome Flex. Each of these server families is tailored to specific use cases and workloads, providing options for businesses of all sizes and industries.",
+    "sources": [
+      {
+        "source": "hpe-proliant-gen11.pdf",
+        "score": "0.873"
+      },
+      {
+        "source": "HPE ProLiant Compute .pdf",
+        "score": "0.869"
+      }
+    ],
+    "usedRAG": true,
+    "classification": "knowledge_base",
+    "confidence": 0.87310797,
+    "timestamp": 1760371444446
+  },
+  "proliant gen12 overview": {
+    "responseText": "HPE ProLiant Gen12 brings next-level performance, efficiency, and security to IT operations. It offers advanced capabilities to maximize productivity and performance, making it ideal for deploying AI applications and rethinking virtualization strategies. With a full, modern portfolio of hardware and software solutions, HPE ProLiant Gen12 provides a secure foundation for the next generation of workloads while increasing power efficiency and streamlining operations. Enterprises can benefit from enhanced security features to mitigate the risks of data breaches, ensuring operational",
+    "sources": [
+      {
+        "source": "HPE Proliant 12th Gen.pdf",
+        "score": "0.869"
+      },
+      {
+        "source": "HPE ProLiant Compute .pdf",
+        "score": "0.861"
+      }
+    ],
+    "usedRAG": true,
+    "classification": "knowledge_base",
+    "confidence": 0.868591428,
+    "timestamp": 1760371446834
+  },
+  "hello": {
+    "responseText": "Hello! I'm your HPE ProLiant AI assistant. I can help you with information about HPE ProLiant servers, including Gen12 systems, specifications, features, customer success stories, and best practices. What would you like to know?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "hi": {
+    "responseText": "Hello! I'm your HPE ProLiant AI assistant. I can help you with information about HPE ProLiant servers, including Gen12 systems, specifications, features, customer success stories, and best practices. What would you like to know?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "how are you?": {
+    "responseText": "I'm functioning perfectly, thank you! I'm ready to help you with any questions about HPE ProLiant servers. What can I assist you with today?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760424341966
+  },
+  "what can you do?": {
+    "responseText": "I can provide detailed information about HPE ProLiant servers, including Gen12 systems, specifications, performance metrics, features, and technical guidance. I have access to HPE documentation and can answer questions about DL380, DL360, DL384, and other ProLiant models. Just ask!",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "intelligent_response",
+    "confidence": 0.95,
+    "timestamp": 1760424341966
+  },
+  "compare dl380 and dl360": {
+    "responseText": "The DL380 and DL360 are both 2U rack servers. DL380 offers maximum flexibility and expansion with more drive bays and PCIe slots, ideal for diverse workloads and supporting up to 4TB DDR5 memory. DL360 provides a more compact design while maintaining excellent performance, better suited for space-constrained environments. Both support Gen12 processors, offer enterprise-grade features, HPE iLO management, and comprehensive virtualization support.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.89,
+    "timestamp": 1760434336822
+  },
+  "what is ilo?": {
+    "responseText": "iLO (Integrated Lights-Out) is HPE's advanced server management technology. It provides remote access and management of ProLiant servers, including power control, console access, firmware updates, and hardware monitoring. iLO allows administrators to manage servers even when they're powered off, improving efficiency and reducing downtime. Gen12 servers feature iLO 7 with Silicon Root of Trust.",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "intelligent_response",
+    "confidence": 0.9,
+    "timestamp": 1760424341966
+  },
+  "gen12 performance": {
+    "responseText": "Gen12 servers deliver exceptional performance with up to 41% better performance per watt compared to Gen10 systems. They support the latest processors with improved memory bandwidth, enable up to 7:1 server consolidation, and are optimized for AI workloads, virtualization, and demanding enterprise applications with flexible modular design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336822
+  },
+  "thank you": {
+    "responseText": "You're welcome! Feel free to ask if you have any more questions about HPE ProLiant servers.",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "thanks": {
+    "responseText": "You're welcome! Feel free to ask if you have any more questions about HPE ProLiant servers.",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "hey": {
+    "responseText": "Hello! I'm your HPE ProLiant AI assistant. I can help you with information about HPE ProLiant servers, including Gen12 systems, specifications, features, customer success stories, and best practices. What would you like to know?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "good morning": {
+    "responseText": "Hello! I'm your HPE ProLiant AI assistant. I can help you with information about HPE ProLiant servers, including Gen12 systems, specifications, features, customer success stories, and best practices. What would you like to know?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "bye": {
+    "responseText": "Goodbye! Feel free to come back anytime you need information about HPE ProLiant servers. Have a great day!",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "dl380 specifications": {
+    "responseText": "DL380 Gen12 specifications include 2U rack form factor, Intel Xeon 6 or 4th/5th Gen Xeon Scalable processors, up to 4TB DDR5 memory, EDSFF and SFF drive support, HPE iLO 7 with Silicon Root of Trust, HPE Compute Ops Management support, and GPU options up to 10 double-wide or 16 single-wide for AI acceleration. It delivers exceptional performance for virtualization, databases, and AI applications.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.94,
+    "timestamp": 1760434336822
+  },
+  "dl380 gen12 specs": {
+    "responseText": "DL380 Gen12 specifications include 2U rack form factor, Intel Xeon 6 or 4th/5th Gen Xeon Scalable processors, up to 4TB DDR5 memory, EDSFF and SFF drive support, HPE iLO 7 with Silicon Root of Trust, HPE Compute Ops Management support, and GPU options up to 10 double-wide or 16 single-wide for AI acceleration. It delivers exceptional performance for virtualization, databases, and AI applications.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.94,
+    "timestamp": 1760434336822
+  },
+  "compare dl380 and dl384": {
+    "responseText": "DL380 Gen12 is optimized for general-purpose computing and flexible GPU acceleration with up to 16 single-wide GPUs, supporting up to 4TB DDR5 memory. DL384 Gen12 is specifically designed for AI workloads with NVIDIA GH200 NVL2 processors, up to 1TB memory, and advanced cooling including liquid cooling options. Choose DL380 for versatile workloads or DL384 for specialized AI fine-tuning and inference applications.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.9,
+    "timestamp": 1760434336823
+  },
+  "difference between dl380 and dl360": {
+    "responseText": "The DL380 and DL360 are both 2U rack servers. DL380 offers maximum flexibility and expansion with more drive bays and PCIe slots, ideal for diverse workloads and supporting up to 4TB DDR5 memory. DL360 provides a more compact design while maintaining excellent performance, better suited for space-constrained environments. Both support Gen12 processors, offer enterprise-grade features, HPE iLO management, and comprehensive virtualization support.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.89,
+    "timestamp": 1760434336823
+  },
+  "ilo features": {
+    "responseText": "iLO features include remote power control, virtual console access, firmware updates, hardware health monitoring, Silicon Root of Trust security, automated recovery, predictive analytics, and zero-touch deployment. iLO 7 in Gen12 servers adds enhanced security, AI-driven insights for proactive management, simplified deployment methods, and unified control across distributed computing environments.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.9,
+    "timestamp": 1760434336823
+  },
+  "gen12 power savings": {
+    "responseText": "Gen12 servers achieve up to 65% power savings compared to older generations, with 41% better performance per watt. Combined with 7:1 server consolidation capabilities, Gen12 significantly reduces data center energy consumption and operational costs while improving sustainability and freeing up data center capacity.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.91,
+    "timestamp": 1760434336822
+  },
+  "ai workloads": {
+    "responseText": "Gen12 ProLiant servers are optimized for AI workloads including generative AI fine-tuning, inference, and training. DL380 supports flexible GPU configurations with up to 16 single-wide GPUs, DL384 features NVIDIA GH200 for AI inference, and XD685 provides maximum power with 8x NVIDIA H200 SXM or Blackwell B200 GPUs for large model training. All include AI-driven management through Compute Ops Management.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336823
+  },
+  "gpu support": {
+    "responseText": "HPE ProLiant servers support various GPU configurations. DL380 Gen12 accommodates up to 10 double-wide or 16 single-wide GPUs. DL384 features NVIDIA GH200 NVL2. XD685 supports 8x NVIDIA H200 SXM or 8x NVIDIA Blackwell (B200) GPUs with advanced cooling including direct liquid cooling for sustained AI performance and ultra-scalable GPU acceleration.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.94,
+    "timestamp": 1760434336823
+  },
+  "virtualization support": {
+    "responseText": "ProLiant servers excel at virtualization with support for VMware, KVM, Hyper-V, and other hypervisors. HPE Morpheus VM Essentials provides unified management for both KVM and VMware environments from a single interface. Gen12 servers offer improved virtualization density and performance with advanced processor features, increased memory capacity up to 4TB DDR5, and reduced cost and complexity of virtualized workloads.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.88,
+    "timestamp": 1760434336823
+  },
+  "security features": {
+    "responseText": "ProLiant servers feature industry-leading security with HPE iLO Silicon Root of Trust providing multi-layered protection embedded in hardware. Additional security includes secure boot, firmware validation, encrypted communications, physical intrusion detection, zero-trust architecture, and continuous verification of hardware, operating systems, and workloads. Gen12 enhances security for current and future threats with security-first design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336823
+  },
+  "silicon root of trust": {
+    "responseText": "Silicon Root of Trust is a security foundation embedded within ProLiant server hardware. It provides immutable firmware protection, secure boot validation, runtime firmware verification, and hardware-based intrusion detection. This creates multiple security layers to protect against physical and digital threats throughout the server lifecycle, safeguarding every phase with enhanced physical and digital intrusion resistance.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336823
+  },
+  "greenlake benefits": {
+    "responseText": "HPE GreenLake benefits include pay-per-use pricing with 40% capacity buffer, cloud-like scalability, unified management across hybrid environments, faster provisioning (weeks to days), predictable costs, reduced capital expenditure, simplified operations, energy cost optimization, and self-service functionality. It delivers cloud experience with on-premises control, data sovereignty, and ability to increase or decrease capacity dynamically.",
+    "sources": [
+      "chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.89,
+    "timestamp": 1760434336823
+  },
+  "bosch case study": {
+    "responseText": "Bosch Digital Twin Industries uses HPE ProLiant DL380 Gen11 Servers in ruggedized enclosures with HPE Ezmeral Unified Analytics Software for edge AI-powered predictive maintenance. Their integrated asset performance management solution reduces unplanned downtime and maintenance costs, increases operational efficiency with real-time edge insights, optimizes resource use, reduces energy consumption, and extends asset lifespan for industrial equipment in manufacturing, energy, and utilities sectors.",
+    "sources": [
+      "chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336823
+  },
+  "hpe services": {
+    "responseText": "HPE Services include Advisory and Professional Services for planning and integration, Support Services like HPE Complete Care and Tech Care with AI-powered monitoring, HPE Managed Services for infrastructure management, Education Services for training, and HPE Financial Services for asset lifecycle management. Services help accelerate business outcomes, optimize operations, and maximize IT investments from edge to cloud.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.87,
+    "timestamp": 1760434336823
+  },
+  "how much does proliant cost?": {
+    "responseText": "ProLiant server pricing varies based on model, configuration, processor, memory, storage, and GPU options. HPE offers flexible purchasing including outright purchase, HPE GreenLake pay-per-use, and HPE Financial Services leasing. Contact HPE sales or authorized partners for specific pricing tailored to your requirements and volume.",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "intelligent_response",
+    "confidence": 0.82,
+    "timestamp": 1760424341966
+  },
+  "sustainability": {
+    "responseText": "HPE ProLiant Gen12 supports sustainability through 65% power savings, 7:1 server consolidation reducing hardware needs, improved performance per watt (41% better), asset upcycling services, circular economy practices, and energy-efficient design. HPE Financial Services processed 9.2 million assets with 86-94% going back into market for reuse, supporting environmental goals and reducing e-waste.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.88,
+    "timestamp": 1760434336823
+  },
+  "explain gen12 servers": {
+    "responseText": "HPE ProLiant Gen12 servers deliver breakthrough performance with up to 41% better performance per watt compared to Gen10. They enable up to 7:1 server consolidation, 65% power savings, and are AI-optimized for generative AI and inference workloads. Gen12 ensures a secure foundation to power new workloads while addressing inefficiencies and streamlining operations with modular design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "what is gen12": {
+    "responseText": "HPE ProLiant Gen12 servers deliver breakthrough performance with up to 41% better performance per watt compared to Gen10. They enable up to 7:1 server consolidation, 65% power savings, and are AI-optimized for generative AI and inference workloads. Gen12 ensures a secure foundation to power new workloads while addressing inefficiencies and streamlining operations with modular design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "what are gen12 servers": {
+    "responseText": "HPE ProLiant Gen12 servers deliver breakthrough performance with up to 41% better performance per watt compared to Gen10. They enable up to 7:1 server consolidation, 65% power savings, and are AI-optimized for generative AI and inference workloads. Gen12 ensures a secure foundation to power new workloads while addressing inefficiencies and streamlining operations with modular design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "gen12 server information": {
+    "responseText": "HPE ProLiant Gen12 servers deliver breakthrough performance with up to 41% better performance per watt compared to Gen10. They enable up to 7:1 server consolidation, 65% power savings, and are AI-optimized for generative AI and inference workloads. Gen12 ensures a secure foundation to power new workloads while addressing inefficiencies and streamlining operations with modular design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "describe gen12 servers": {
+    "responseText": "HPE ProLiant Gen12 servers deliver breakthrough performance with up to 41% better performance per watt compared to Gen10. They enable up to 7:1 server consolidation, 65% power savings, and are AI-optimized for generative AI and inference workloads. Gen12 ensures a secure foundation to power new workloads while addressing inefficiencies and streamlining operations with modular design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "gen12 server details": {
+    "responseText": "HPE ProLiant Gen12 servers deliver breakthrough performance with up to 41% better performance per watt compared to Gen10. They enable up to 7:1 server consolidation, 65% power savings, and are AI-optimized for generative AI and inference workloads. Gen12 ensures a secure foundation to power new workloads while addressing inefficiencies and streamlining operations with modular design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "info about gen12": {
+    "responseText": "HPE ProLiant Gen12 servers deliver breakthrough performance with up to 41% better performance per watt compared to Gen10. They enable up to 7:1 server consolidation, 65% power savings, and are AI-optimized for generative AI and inference workloads. Gen12 ensures a secure foundation to power new workloads while addressing inefficiencies and streamlining operations with modular design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "tell me gen12": {
+    "responseText": "HPE ProLiant Gen12 servers deliver breakthrough performance with up to 41% better performance per watt compared to Gen10. They enable up to 7:1 server consolidation, 65% power savings, and are AI-optimized for generative AI and inference workloads. Gen12 ensures a secure foundation to power new workloads while addressing inefficiencies and streamlining operations with modular design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "explain about gen12": {
+    "responseText": "HPE ProLiant Gen12 servers deliver breakthrough performance with up to 41% better performance per watt compared to Gen10. They enable up to 7:1 server consolidation, 65% power savings, and are AI-optimized for generative AI and inference workloads. Gen12 ensures a secure foundation to power new workloads while addressing inefficiencies and streamlining operations with modular design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "how fast is gen12": {
+    "responseText": "Gen12 servers deliver exceptional performance with up to 41% better performance per watt compared to Gen10 systems. They support the latest processors with improved memory bandwidth, enable up to 7:1 server consolidation, and are optimized for AI workloads, virtualization, and demanding enterprise applications with flexible modular design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336822
+  },
+  "gen12 speed": {
+    "responseText": "Gen12 servers deliver exceptional performance with up to 41% better performance per watt compared to Gen10 systems. They support the latest processors with improved memory bandwidth, enable up to 7:1 server consolidation, and are optimized for AI workloads, virtualization, and demanding enterprise applications with flexible modular design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336822
+  },
+  "gen12 benchmark": {
+    "responseText": "Gen12 servers deliver exceptional performance with up to 41% better performance per watt compared to Gen10 systems. They support the latest processors with improved memory bandwidth, enable up to 7:1 server consolidation, and are optimized for AI workloads, virtualization, and demanding enterprise applications with flexible modular design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336822
+  },
+  "performance of gen12": {
+    "responseText": "Gen12 servers deliver exceptional performance with up to 41% better performance per watt compared to Gen10 systems. They support the latest processors with improved memory bandwidth, enable up to 7:1 server consolidation, and are optimized for AI workloads, virtualization, and demanding enterprise applications with flexible modular design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336822
+  },
+  "gen12 performance metrics": {
+    "responseText": "Gen12 servers deliver exceptional performance with up to 41% better performance per watt compared to Gen10 systems. They support the latest processors with improved memory bandwidth, enable up to 7:1 server consolidation, and are optimized for AI workloads, virtualization, and demanding enterprise applications with flexible modular design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336822
+  },
+  "gen12 energy efficiency": {
+    "responseText": "Gen12 servers achieve up to 65% power savings compared to older generations, with 41% better performance per watt. Combined with 7:1 server consolidation capabilities, Gen12 significantly reduces data center energy consumption and operational costs while improving sustainability and freeing up data center capacity.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.91,
+    "timestamp": 1760434336822
+  },
+  "gen12 power consumption": {
+    "responseText": "Gen12 servers achieve up to 65% power savings compared to older generations, with 41% better performance per watt. Combined with 7:1 server consolidation capabilities, Gen12 significantly reduces data center energy consumption and operational costs while improving sustainability and freeing up data center capacity.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.91,
+    "timestamp": 1760434336822
+  },
+  "how much power does gen12 save": {
+    "responseText": "Gen12 servers achieve up to 65% power savings compared to older generations, with 41% better performance per watt. Combined with 7:1 server consolidation capabilities, Gen12 significantly reduces data center energy consumption and operational costs while improving sustainability and freeing up data center capacity.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.91,
+    "timestamp": 1760434336822
+  },
+  "gen12 energy savings": {
+    "responseText": "Gen12 servers achieve up to 65% power savings compared to older generations, with 41% better performance per watt. Combined with 7:1 server consolidation capabilities, Gen12 significantly reduces data center energy consumption and operational costs while improving sustainability and freeing up data center capacity.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.91,
+    "timestamp": 1760434336822
+  },
+  "what is dl380": {
+    "responseText": "HPE ProLiant DL380 is a versatile 2U rack server known for its flexibility, reliability, and performance optimization. It's part of the ProLiant Compute Gen12 rack portfolio, offering improved energy efficiency, comprehensive management suite with HPE iLO 7, and industry-leading support. The DL380 supports up to 4TB DDR5 memory, Intel Xeon 6 or 4th/5th Gen processors, and up to 10 double-wide or 16 single-wide GPUs for AI workloads.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336822
+  },
+  "tell me about dl380": {
+    "responseText": "HPE ProLiant DL380 is a versatile 2U rack server known for its flexibility, reliability, and performance optimization. It's part of the ProLiant Compute Gen12 rack portfolio, offering improved energy efficiency, comprehensive management suite with HPE iLO 7, and industry-leading support. The DL380 supports up to 4TB DDR5 memory, Intel Xeon 6 or 4th/5th Gen processors, and up to 10 double-wide or 16 single-wide GPUs for AI workloads.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336822
+  },
+  "explain dl380": {
+    "responseText": "HPE ProLiant DL380 is a versatile 2U rack server known for its flexibility, reliability, and performance optimization. It's part of the ProLiant Compute Gen12 rack portfolio, offering improved energy efficiency, comprehensive management suite with HPE iLO 7, and industry-leading support. The DL380 supports up to 4TB DDR5 memory, Intel Xeon 6 or 4th/5th Gen processors, and up to 10 double-wide or 16 single-wide GPUs for AI workloads.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336822
+  },
+  "dl380 information": {
+    "responseText": "HPE ProLiant DL380 is a versatile 2U rack server known for its flexibility, reliability, and performance optimization. It's part of the ProLiant Compute Gen12 rack portfolio, offering improved energy efficiency, comprehensive management suite with HPE iLO 7, and industry-leading support. The DL380 supports up to 4TB DDR5 memory, Intel Xeon 6 or 4th/5th Gen processors, and up to 10 double-wide or 16 single-wide GPUs for AI workloads.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336822
+  },
+  "dl380 details": {
+    "responseText": "HPE ProLiant DL380 is a versatile 2U rack server known for its flexibility, reliability, and performance optimization. It's part of the ProLiant Compute Gen12 rack portfolio, offering improved energy efficiency, comprehensive management suite with HPE iLO 7, and industry-leading support. The DL380 supports up to 4TB DDR5 memory, Intel Xeon 6 or 4th/5th Gen processors, and up to 10 double-wide or 16 single-wide GPUs for AI workloads.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336822
+  },
+  "describe dl380": {
+    "responseText": "HPE ProLiant DL380 is a versatile 2U rack server known for its flexibility, reliability, and performance optimization. It's part of the ProLiant Compute Gen12 rack portfolio, offering improved energy efficiency, comprehensive management suite with HPE iLO 7, and industry-leading support. The DL380 supports up to 4TB DDR5 memory, Intel Xeon 6 or 4th/5th Gen processors, and up to 10 double-wide or 16 single-wide GPUs for AI workloads.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336822
+  },
+  "what is proliant dl380": {
+    "responseText": "HPE ProLiant DL380 is a versatile 2U rack server known for its flexibility, reliability, and performance optimization. It's part of the ProLiant Compute Gen12 rack portfolio, offering improved energy efficiency, comprehensive management suite with HPE iLO 7, and industry-leading support. The DL380 supports up to 4TB DDR5 memory, Intel Xeon 6 or 4th/5th Gen processors, and up to 10 double-wide or 16 single-wide GPUs for AI workloads.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336822
+  },
+  "dl380 specs": {
+    "responseText": "DL380 Gen12 specifications include 2U rack form factor, Intel Xeon 6 or 4th/5th Gen Xeon Scalable processors, up to 4TB DDR5 memory, EDSFF and SFF drive support, HPE iLO 7 with Silicon Root of Trust, HPE Compute Ops Management support, and GPU options up to 10 double-wide or 16 single-wide for AI acceleration. It delivers exceptional performance for virtualization, databases, and AI applications.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.94,
+    "timestamp": 1760434336822
+  },
+  "what are dl380 specs": {
+    "responseText": "DL380 Gen12 specifications include 2U rack form factor, Intel Xeon 6 or 4th/5th Gen Xeon Scalable processors, up to 4TB DDR5 memory, EDSFF and SFF drive support, HPE iLO 7 with Silicon Root of Trust, HPE Compute Ops Management support, and GPU options up to 10 double-wide or 16 single-wide for AI acceleration. It delivers exceptional performance for virtualization, databases, and AI applications.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.94,
+    "timestamp": 1760434336822
+  },
+  "dl380 technical specs": {
+    "responseText": "DL380 Gen12 specifications include 2U rack form factor, Intel Xeon 6 or 4th/5th Gen Xeon Scalable processors, up to 4TB DDR5 memory, EDSFF and SFF drive support, HPE iLO 7 with Silicon Root of Trust, HPE Compute Ops Management support, and GPU options up to 10 double-wide or 16 single-wide for AI acceleration. It delivers exceptional performance for virtualization, databases, and AI applications.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.94,
+    "timestamp": 1760434336822
+  },
+  "dl380 features": {
+    "responseText": "DL380 Gen12 specifications include 2U rack form factor, Intel Xeon 6 or 4th/5th Gen Xeon Scalable processors, up to 4TB DDR5 memory, EDSFF and SFF drive support, HPE iLO 7 with Silicon Root of Trust, HPE Compute Ops Management support, and GPU options up to 10 double-wide or 16 single-wide for AI acceleration. It delivers exceptional performance for virtualization, databases, and AI applications.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.94,
+    "timestamp": 1760434336822
+  },
+  "what is dl360": {
+    "responseText": "HPE ProLiant DL360 is a compact 2U rack server offering excellent performance in a space-efficient design. It's ideal for space-constrained data centers while maintaining enterprise-grade features including Gen12 processor support, DDR5 memory, comprehensive management capabilities with HPE iLO, and strong security. The DL360 balances performance, density, and cost-effectiveness.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.9,
+    "timestamp": 1760434336822
+  },
+  "tell me about dl360": {
+    "responseText": "HPE ProLiant DL360 is a compact 2U rack server offering excellent performance in a space-efficient design. It's ideal for space-constrained data centers while maintaining enterprise-grade features including Gen12 processor support, DDR5 memory, comprehensive management capabilities with HPE iLO, and strong security. The DL360 balances performance, density, and cost-effectiveness.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.9,
+    "timestamp": 1760434336822
+  },
+  "explain dl360": {
+    "responseText": "HPE ProLiant DL360 is a compact 2U rack server offering excellent performance in a space-efficient design. It's ideal for space-constrained data centers while maintaining enterprise-grade features including Gen12 processor support, DDR5 memory, comprehensive management capabilities with HPE iLO, and strong security. The DL360 balances performance, density, and cost-effectiveness.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.9,
+    "timestamp": 1760434336822
+  },
+  "dl360 information": {
+    "responseText": "HPE ProLiant DL360 is a compact 2U rack server offering excellent performance in a space-efficient design. It's ideal for space-constrained data centers while maintaining enterprise-grade features including Gen12 processor support, DDR5 memory, comprehensive management capabilities with HPE iLO, and strong security. The DL360 balances performance, density, and cost-effectiveness.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.9,
+    "timestamp": 1760434336822
+  },
+  "dl360 details": {
+    "responseText": "HPE ProLiant DL360 is a compact 2U rack server offering excellent performance in a space-efficient design. It's ideal for space-constrained data centers while maintaining enterprise-grade features including Gen12 processor support, DDR5 memory, comprehensive management capabilities with HPE iLO, and strong security. The DL360 balances performance, density, and cost-effectiveness.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.9,
+    "timestamp": 1760434336822
+  },
+  "describe dl360": {
+    "responseText": "HPE ProLiant DL360 is a compact 2U rack server offering excellent performance in a space-efficient design. It's ideal for space-constrained data centers while maintaining enterprise-grade features including Gen12 processor support, DDR5 memory, comprehensive management capabilities with HPE iLO, and strong security. The DL360 balances performance, density, and cost-effectiveness.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.9,
+    "timestamp": 1760434336822
+  },
+  "what is dl384": {
+    "responseText": "HPE ProLiant DL384 Gen12 is a powerhouse 2U server optimized for next-level performance in Gen AI fine-tuning, inferencing, and mixed workloads. It features NVIDIA GH200 NVL2 processors, up to 1TB memory, EDSFF storage, and HPE iLO 7 management. Purpose-built for demanding AI applications with advanced cooling options including direct liquid cooling.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336822
+  },
+  "tell me about dl384": {
+    "responseText": "HPE ProLiant DL384 Gen12 is a powerhouse 2U server optimized for next-level performance in Gen AI fine-tuning, inferencing, and mixed workloads. It features NVIDIA GH200 NVL2 processors, up to 1TB memory, EDSFF storage, and HPE iLO 7 management. Purpose-built for demanding AI applications with advanced cooling options including direct liquid cooling.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336822
+  },
+  "explain dl384": {
+    "responseText": "HPE ProLiant DL384 Gen12 is a powerhouse 2U server optimized for next-level performance in Gen AI fine-tuning, inferencing, and mixed workloads. It features NVIDIA GH200 NVL2 processors, up to 1TB memory, EDSFF storage, and HPE iLO 7 management. Purpose-built for demanding AI applications with advanced cooling options including direct liquid cooling.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336822
+  },
+  "dl384 information": {
+    "responseText": "HPE ProLiant DL384 Gen12 is a powerhouse 2U server optimized for next-level performance in Gen AI fine-tuning, inferencing, and mixed workloads. It features NVIDIA GH200 NVL2 processors, up to 1TB memory, EDSFF storage, and HPE iLO 7 management. Purpose-built for demanding AI applications with advanced cooling options including direct liquid cooling.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336822
+  },
+  "dl384 details": {
+    "responseText": "HPE ProLiant DL384 Gen12 is a powerhouse 2U server optimized for next-level performance in Gen AI fine-tuning, inferencing, and mixed workloads. It features NVIDIA GH200 NVL2 processors, up to 1TB memory, EDSFF storage, and HPE iLO 7 management. Purpose-built for demanding AI applications with advanced cooling options including direct liquid cooling.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336822
+  },
+  "describe dl384": {
+    "responseText": "HPE ProLiant DL384 Gen12 is a powerhouse 2U server optimized for next-level performance in Gen AI fine-tuning, inferencing, and mixed workloads. It features NVIDIA GH200 NVL2 processors, up to 1TB memory, EDSFF storage, and HPE iLO 7 management. Purpose-built for demanding AI applications with advanced cooling options including direct liquid cooling.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336822
+  },
+  "what is xd685": {
+    "responseText": "HPE ProLiant XD685 is a high-performance compute server designed for large AI model training and fine-tuning. It features 5U direct-liquid cooled or 6U air-cooled configurations, 2P 5th Gen AMD EPYC processors, up to 6TB DDR5 memory, EDSFF drives, HPE iLO 6, HPE Performance Cluster Manager, and 8x NVIDIA H200 SXM or 8x NVIDIA Blackwell B200 GPUs. It's HPE's flagship for demanding AI workloads.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336822
+  },
+  "tell me about xd685": {
+    "responseText": "HPE ProLiant XD685 is a high-performance compute server designed for large AI model training and fine-tuning. It features 5U direct-liquid cooled or 6U air-cooled configurations, 2P 5th Gen AMD EPYC processors, up to 6TB DDR5 memory, EDSFF drives, HPE iLO 6, HPE Performance Cluster Manager, and 8x NVIDIA H200 SXM or 8x NVIDIA Blackwell B200 GPUs. It's HPE's flagship for demanding AI workloads.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336822
+  },
+  "explain xd685": {
+    "responseText": "HPE ProLiant XD685 is a high-performance compute server designed for large AI model training and fine-tuning. It features 5U direct-liquid cooled or 6U air-cooled configurations, 2P 5th Gen AMD EPYC processors, up to 6TB DDR5 memory, EDSFF drives, HPE iLO 6, HPE Performance Cluster Manager, and 8x NVIDIA H200 SXM or 8x NVIDIA Blackwell B200 GPUs. It's HPE's flagship for demanding AI workloads.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336822
+  },
+  "xd685 information": {
+    "responseText": "HPE ProLiant XD685 is a high-performance compute server designed for large AI model training and fine-tuning. It features 5U direct-liquid cooled or 6U air-cooled configurations, 2P 5th Gen AMD EPYC processors, up to 6TB DDR5 memory, EDSFF drives, HPE iLO 6, HPE Performance Cluster Manager, and 8x NVIDIA H200 SXM or 8x NVIDIA Blackwell B200 GPUs. It's HPE's flagship for demanding AI workloads.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336822
+  },
+  "xd685 details": {
+    "responseText": "HPE ProLiant XD685 is a high-performance compute server designed for large AI model training and fine-tuning. It features 5U direct-liquid cooled or 6U air-cooled configurations, 2P 5th Gen AMD EPYC processors, up to 6TB DDR5 memory, EDSFF drives, HPE iLO 6, HPE Performance Cluster Manager, and 8x NVIDIA H200 SXM or 8x NVIDIA Blackwell B200 GPUs. It's HPE's flagship for demanding AI workloads.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336822
+  },
+  "what is dl145": {
+    "responseText": "HPE ProLiant DL145 Gen11 is an edge-optimized server powered by 4th Gen AMD EPYC 8004 processors. Designed for critical business applications, virtualization, and AI workloads at the edge, it operates in temperatures from -5°C to 55°C with built-in air filtration and vibration tolerance. Perfect for retail, healthcare, manufacturing, and distribution environments with simplified management and enterprise-grade security.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.91,
+    "timestamp": 1760434336822
+  },
+  "tell me about dl145": {
+    "responseText": "HPE ProLiant DL145 Gen11 is an edge-optimized server powered by 4th Gen AMD EPYC 8004 processors. Designed for critical business applications, virtualization, and AI workloads at the edge, it operates in temperatures from -5°C to 55°C with built-in air filtration and vibration tolerance. Perfect for retail, healthcare, manufacturing, and distribution environments with simplified management and enterprise-grade security.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.91,
+    "timestamp": 1760434336822
+  },
+  "explain dl145": {
+    "responseText": "HPE ProLiant DL145 Gen11 is an edge-optimized server powered by 4th Gen AMD EPYC 8004 processors. Designed for critical business applications, virtualization, and AI workloads at the edge, it operates in temperatures from -5°C to 55°C with built-in air filtration and vibration tolerance. Perfect for retail, healthcare, manufacturing, and distribution environments with simplified management and enterprise-grade security.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.91,
+    "timestamp": 1760434336822
+  },
+  "dl145 information": {
+    "responseText": "HPE ProLiant DL145 Gen11 is an edge-optimized server powered by 4th Gen AMD EPYC 8004 processors. Designed for critical business applications, virtualization, and AI workloads at the edge, it operates in temperatures from -5°C to 55°C with built-in air filtration and vibration tolerance. Perfect for retail, healthcare, manufacturing, and distribution environments with simplified management and enterprise-grade security.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.91,
+    "timestamp": 1760434336822
+  },
+  "dl145 edge server": {
+    "responseText": "HPE ProLiant DL145 Gen11 is an edge-optimized server powered by 4th Gen AMD EPYC 8004 processors. Designed for critical business applications, virtualization, and AI workloads at the edge, it operates in temperatures from -5°C to 55°C with built-in air filtration and vibration tolerance. Perfect for retail, healthcare, manufacturing, and distribution environments with simplified management and enterprise-grade security.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.91,
+    "timestamp": 1760434336822
+  },
+  "dl380 vs dl360": {
+    "responseText": "The DL380 and DL360 are both 2U rack servers. DL380 offers maximum flexibility and expansion with more drive bays and PCIe slots, ideal for diverse workloads and supporting up to 4TB DDR5 memory. DL360 provides a more compact design while maintaining excellent performance, better suited for space-constrained environments. Both support Gen12 processors, offer enterprise-grade features, HPE iLO management, and comprehensive virtualization support.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.89,
+    "timestamp": 1760434336822
+  },
+  "dl380 or dl360": {
+    "responseText": "The DL380 and DL360 are both 2U rack servers. DL380 offers maximum flexibility and expansion with more drive bays and PCIe slots, ideal for diverse workloads and supporting up to 4TB DDR5 memory. DL360 provides a more compact design while maintaining excellent performance, better suited for space-constrained environments. Both support Gen12 processors, offer enterprise-grade features, HPE iLO management, and comprehensive virtualization support.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.89,
+    "timestamp": 1760434336823
+  },
+  "which is better dl380 or dl360": {
+    "responseText": "The DL380 and DL360 are both 2U rack servers. DL380 offers maximum flexibility and expansion with more drive bays and PCIe slots, ideal for diverse workloads and supporting up to 4TB DDR5 memory. DL360 provides a more compact design while maintaining excellent performance, better suited for space-constrained environments. Both support Gen12 processors, offer enterprise-grade features, HPE iLO management, and comprehensive virtualization support.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.89,
+    "timestamp": 1760434336823
+  },
+  "dl380 vs dl384": {
+    "responseText": "DL380 Gen12 is optimized for general-purpose computing and flexible GPU acceleration with up to 16 single-wide GPUs, supporting up to 4TB DDR5 memory. DL384 Gen12 is specifically designed for AI workloads with NVIDIA GH200 NVL2 processors, up to 1TB memory, and advanced cooling including liquid cooling options. Choose DL380 for versatile workloads or DL384 for specialized AI fine-tuning and inference applications.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.9,
+    "timestamp": 1760434336823
+  },
+  "difference between dl380 and dl384": {
+    "responseText": "DL380 Gen12 is optimized for general-purpose computing and flexible GPU acceleration with up to 16 single-wide GPUs, supporting up to 4TB DDR5 memory. DL384 Gen12 is specifically designed for AI workloads with NVIDIA GH200 NVL2 processors, up to 1TB memory, and advanced cooling including liquid cooling options. Choose DL380 for versatile workloads or DL384 for specialized AI fine-tuning and inference applications.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.9,
+    "timestamp": 1760434336823
+  },
+  "dl380 or dl384": {
+    "responseText": "DL380 Gen12 is optimized for general-purpose computing and flexible GPU acceleration with up to 16 single-wide GPUs, supporting up to 4TB DDR5 memory. DL384 Gen12 is specifically designed for AI workloads with NVIDIA GH200 NVL2 processors, up to 1TB memory, and advanced cooling including liquid cooling options. Choose DL380 for versatile workloads or DL384 for specialized AI fine-tuning and inference applications.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.9,
+    "timestamp": 1760434336823
+  },
+  "what is ilo": {
+    "responseText": "iLO (Integrated Lights-Out) is HPE's industry-leading server management technology embedded in ProLiant servers. It provides remote access and management including power control, console access, firmware updates, and hardware monitoring even when servers are powered off. Gen12 servers feature iLO 7 with Silicon Root of Trust, providing security foundation embedded within hardware for multi-layered protection and enhanced physical and digital intrusion resistance.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.94,
+    "timestamp": 1760434336823
+  },
+  "what is hpe ilo": {
+    "responseText": "iLO (Integrated Lights-Out) is HPE's industry-leading server management technology embedded in ProLiant servers. It provides remote access and management including power control, console access, firmware updates, and hardware monitoring even when servers are powered off. Gen12 servers feature iLO 7 with Silicon Root of Trust, providing security foundation embedded within hardware for multi-layered protection and enhanced physical and digital intrusion resistance.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.94,
+    "timestamp": 1760434336823
+  },
+  "explain ilo": {
+    "responseText": "iLO (Integrated Lights-Out) is HPE's industry-leading server management technology embedded in ProLiant servers. It provides remote access and management including power control, console access, firmware updates, and hardware monitoring even when servers are powered off. Gen12 servers feature iLO 7 with Silicon Root of Trust, providing security foundation embedded within hardware for multi-layered protection and enhanced physical and digital intrusion resistance.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.94,
+    "timestamp": 1760434336823
+  },
+  "tell me about ilo": {
+    "responseText": "iLO (Integrated Lights-Out) is HPE's industry-leading server management technology embedded in ProLiant servers. It provides remote access and management including power control, console access, firmware updates, and hardware monitoring even when servers are powered off. Gen12 servers feature iLO 7 with Silicon Root of Trust, providing security foundation embedded within hardware for multi-layered protection and enhanced physical and digital intrusion resistance.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.94,
+    "timestamp": 1760434336823
+  },
+  "ilo management": {
+    "responseText": "iLO (Integrated Lights-Out) is HPE's industry-leading server management technology embedded in ProLiant servers. It provides remote access and management including power control, console access, firmware updates, and hardware monitoring even when servers are powered off. Gen12 servers feature iLO 7 with Silicon Root of Trust, providing security foundation embedded within hardware for multi-layered protection and enhanced physical and digital intrusion resistance.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.94,
+    "timestamp": 1760434336823
+  },
+  "integrated lights out": {
+    "responseText": "iLO (Integrated Lights-Out) is HPE's industry-leading server management technology embedded in ProLiant servers. It provides remote access and management including power control, console access, firmware updates, and hardware monitoring even when servers are powered off. Gen12 servers feature iLO 7 with Silicon Root of Trust, providing security foundation embedded within hardware for multi-layered protection and enhanced physical and digital intrusion resistance.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.94,
+    "timestamp": 1760434336823
+  },
+  "what can ilo do": {
+    "responseText": "iLO features include remote power control, virtual console access, firmware updates, hardware health monitoring, Silicon Root of Trust security, automated recovery, predictive analytics, and zero-touch deployment. iLO 7 in Gen12 servers adds enhanced security, AI-driven insights for proactive management, simplified deployment methods, and unified control across distributed computing environments.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.9,
+    "timestamp": 1760434336823
+  },
+  "ilo capabilities": {
+    "responseText": "iLO features include remote power control, virtual console access, firmware updates, hardware health monitoring, Silicon Root of Trust security, automated recovery, predictive analytics, and zero-touch deployment. iLO 7 in Gen12 servers adds enhanced security, AI-driven insights for proactive management, simplified deployment methods, and unified control across distributed computing environments.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.9,
+    "timestamp": 1760434336823
+  },
+  "ilo functions": {
+    "responseText": "iLO features include remote power control, virtual console access, firmware updates, hardware health monitoring, Silicon Root of Trust security, automated recovery, predictive analytics, and zero-touch deployment. iLO 7 in Gen12 servers adds enhanced security, AI-driven insights for proactive management, simplified deployment methods, and unified control across distributed computing environments.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.9,
+    "timestamp": 1760434336823
+  },
+  "what is compute ops management": {
+    "responseText": "HPE Compute Ops Management is a cloud-based platform that seamlessly monitors, manages, and provides visibility of distributed compute environments from edge to cloud. It offers AI-driven insights, automation, and secure management enabling faster updates and proactive issue resolution. It simplifies server lifecycle operations across complex, distributed environments with a unified control plane and delivers consistent management experience.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.91,
+    "timestamp": 1760434336823
+  },
+  "what is hpe compute ops management": {
+    "responseText": "HPE Compute Ops Management is a cloud-based platform that seamlessly monitors, manages, and provides visibility of distributed compute environments from edge to cloud. It offers AI-driven insights, automation, and secure management enabling faster updates and proactive issue resolution. It simplifies server lifecycle operations across complex, distributed environments with a unified control plane and delivers consistent management experience.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.91,
+    "timestamp": 1760434336823
+  },
+  "explain compute ops management": {
+    "responseText": "HPE Compute Ops Management is a cloud-based platform that seamlessly monitors, manages, and provides visibility of distributed compute environments from edge to cloud. It offers AI-driven insights, automation, and secure management enabling faster updates and proactive issue resolution. It simplifies server lifecycle operations across complex, distributed environments with a unified control plane and delivers consistent management experience.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.91,
+    "timestamp": 1760434336823
+  },
+  "compute ops management features": {
+    "responseText": "HPE Compute Ops Management is a cloud-based platform that seamlessly monitors, manages, and provides visibility of distributed compute environments from edge to cloud. It offers AI-driven insights, automation, and secure management enabling faster updates and proactive issue resolution. It simplifies server lifecycle operations across complex, distributed environments with a unified control plane and delivers consistent management experience.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.91,
+    "timestamp": 1760434336823
+  },
+  "what is hpe greenlake": {
+    "responseText": "HPE GreenLake is a cloud services platform that brings the cloud experience to all your IT from edge to cloud. It offers pay-per-use consumption models, unified management console, and cloud-native services for compute, storage, networking, and more. GreenLake enables flexible, scalable infrastructure with operational simplicity, financial flexibility, built-in capacity buffer, and self-service functionality reducing provisioning times from weeks to days.",
+    "sources": [
+      "chunks.json",
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336823
+  },
+  "what is greenlake": {
+    "responseText": "HPE GreenLake is a cloud services platform that brings the cloud experience to all your IT from edge to cloud. It offers pay-per-use consumption models, unified management console, and cloud-native services for compute, storage, networking, and more. GreenLake enables flexible, scalable infrastructure with operational simplicity, financial flexibility, built-in capacity buffer, and self-service functionality reducing provisioning times from weeks to days.",
+    "sources": [
+      "chunks.json",
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336823
+  },
+  "explain greenlake": {
+    "responseText": "HPE GreenLake is a cloud services platform that brings the cloud experience to all your IT from edge to cloud. It offers pay-per-use consumption models, unified management console, and cloud-native services for compute, storage, networking, and more. GreenLake enables flexible, scalable infrastructure with operational simplicity, financial flexibility, built-in capacity buffer, and self-service functionality reducing provisioning times from weeks to days.",
+    "sources": [
+      "chunks.json",
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336823
+  },
+  "tell me about greenlake": {
+    "responseText": "HPE GreenLake is a cloud services platform that brings the cloud experience to all your IT from edge to cloud. It offers pay-per-use consumption models, unified management console, and cloud-native services for compute, storage, networking, and more. GreenLake enables flexible, scalable infrastructure with operational simplicity, financial flexibility, built-in capacity buffer, and self-service functionality reducing provisioning times from weeks to days.",
+    "sources": [
+      "chunks.json",
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336823
+  },
+  "greenlake information": {
+    "responseText": "HPE GreenLake is a cloud services platform that brings the cloud experience to all your IT from edge to cloud. It offers pay-per-use consumption models, unified management console, and cloud-native services for compute, storage, networking, and more. GreenLake enables flexible, scalable infrastructure with operational simplicity, financial flexibility, built-in capacity buffer, and self-service functionality reducing provisioning times from weeks to days.",
+    "sources": [
+      "chunks.json",
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336823
+  },
+  "why use greenlake": {
+    "responseText": "HPE GreenLake benefits include pay-per-use pricing with 40% capacity buffer, cloud-like scalability, unified management across hybrid environments, faster provisioning (weeks to days), predictable costs, reduced capital expenditure, simplified operations, energy cost optimization, and self-service functionality. It delivers cloud experience with on-premises control, data sovereignty, and ability to increase or decrease capacity dynamically.",
+    "sources": [
+      "chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.89,
+    "timestamp": 1760434336823
+  },
+  "greenlake advantages": {
+    "responseText": "HPE GreenLake benefits include pay-per-use pricing with 40% capacity buffer, cloud-like scalability, unified management across hybrid environments, faster provisioning (weeks to days), predictable costs, reduced capital expenditure, simplified operations, energy cost optimization, and self-service functionality. It delivers cloud experience with on-premises control, data sovereignty, and ability to increase or decrease capacity dynamically.",
+    "sources": [
+      "chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.89,
+    "timestamp": 1760434336823
+  },
+  "benefits of greenlake": {
+    "responseText": "HPE GreenLake benefits include pay-per-use pricing with 40% capacity buffer, cloud-like scalability, unified management across hybrid environments, faster provisioning (weeks to days), predictable costs, reduced capital expenditure, simplified operations, energy cost optimization, and self-service functionality. It delivers cloud experience with on-premises control, data sovereignty, and ability to increase or decrease capacity dynamically.",
+    "sources": [
+      "chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.89,
+    "timestamp": 1760434336823
+  },
+  "bosch success story": {
+    "responseText": "Bosch Digital Twin Industries uses HPE ProLiant DL380 Gen11 Servers in ruggedized enclosures with HPE Ezmeral Unified Analytics Software for edge AI-powered predictive maintenance. Their integrated asset performance management solution reduces unplanned downtime and maintenance costs, increases operational efficiency with real-time edge insights, optimizes resource use, reduces energy consumption, and extends asset lifespan for industrial equipment in manufacturing, energy, and utilities sectors.",
+    "sources": [
+      "chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336823
+  },
+  "tell me about bosch": {
+    "responseText": "Bosch Digital Twin Industries uses HPE ProLiant DL380 Gen11 Servers in ruggedized enclosures with HPE Ezmeral Unified Analytics Software for edge AI-powered predictive maintenance. Their integrated asset performance management solution reduces unplanned downtime and maintenance costs, increases operational efficiency with real-time edge insights, optimizes resource use, reduces energy consumption, and extends asset lifespan for industrial equipment in manufacturing, energy, and utilities sectors.",
+    "sources": [
+      "chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336823
+  },
+  "bosch digital twin": {
+    "responseText": "Bosch Digital Twin Industries uses HPE ProLiant DL380 Gen11 Servers in ruggedized enclosures with HPE Ezmeral Unified Analytics Software for edge AI-powered predictive maintenance. Their integrated asset performance management solution reduces unplanned downtime and maintenance costs, increases operational efficiency with real-time edge insights, optimizes resource use, reduces energy consumption, and extends asset lifespan for industrial equipment in manufacturing, energy, and utilities sectors.",
+    "sources": [
+      "chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336823
+  },
+  "comline case study": {
+    "responseText": "COMLINE, a German IT service provider, migrated to HPE GreenLake edge-to-cloud platform with HPE ProLiant DL380 servers. This established self-service functionality for customers, reduced provisioning times from weeks to days, optimized energy costs through smarter infrastructure utility, and created a breathing data center with 40% capacity buffer. They achieved 5% energy savings and stunning efficiency gains in event dispatching (98.4%) and VM deployments (53.9%).",
+    "sources": [
+      "chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.9,
+    "timestamp": 1760434336823
+  },
+  "comline success story": {
+    "responseText": "COMLINE, a German IT service provider, migrated to HPE GreenLake edge-to-cloud platform with HPE ProLiant DL380 servers. This established self-service functionality for customers, reduced provisioning times from weeks to days, optimized energy costs through smarter infrastructure utility, and created a breathing data center with 40% capacity buffer. They achieved 5% energy savings and stunning efficiency gains in event dispatching (98.4%) and VM deployments (53.9%).",
+    "sources": [
+      "chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.9,
+    "timestamp": 1760434336823
+  },
+  "tell me about comline": {
+    "responseText": "COMLINE, a German IT service provider, migrated to HPE GreenLake edge-to-cloud platform with HPE ProLiant DL380 servers. This established self-service functionality for customers, reduced provisioning times from weeks to days, optimized energy costs through smarter infrastructure utility, and created a breathing data center with 40% capacity buffer. They achieved 5% energy savings and stunning efficiency gains in event dispatching (98.4%) and VM deployments (53.9%).",
+    "sources": [
+      "chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.9,
+    "timestamp": 1760434336823
+  },
+  "ducks unlimited case study": {
+    "responseText": "Ducks Unlimited Canada leverages HPE GreenLake for Private Cloud Business Edition with HPE Alletra dHCI and HPE ProLiant DL360 Gen11 Servers for conservation efforts. The solution delivers cost efficiency to process, store, and backup GIS data, powers machine learning for comprehensive wetland mapping of Canada, enables focus on highest impact areas through data insights, and supports IoT devices for continuous ecosystem monitoring across 13,500 projects and 6 million acres.",
+    "sources": [
+      "chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.91,
+    "timestamp": 1760434336823
+  },
+  "ducks unlimited success story": {
+    "responseText": "Ducks Unlimited Canada leverages HPE GreenLake for Private Cloud Business Edition with HPE Alletra dHCI and HPE ProLiant DL360 Gen11 Servers for conservation efforts. The solution delivers cost efficiency to process, store, and backup GIS data, powers machine learning for comprehensive wetland mapping of Canada, enables focus on highest impact areas through data insights, and supports IoT devices for continuous ecosystem monitoring across 13,500 projects and 6 million acres.",
+    "sources": [
+      "chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.91,
+    "timestamp": 1760434336823
+  },
+  "tell me about ducks unlimited": {
+    "responseText": "Ducks Unlimited Canada leverages HPE GreenLake for Private Cloud Business Edition with HPE Alletra dHCI and HPE ProLiant DL360 Gen11 Servers for conservation efforts. The solution delivers cost efficiency to process, store, and backup GIS data, powers machine learning for comprehensive wetland mapping of Canada, enables focus on highest impact areas through data insights, and supports IoT devices for continuous ecosystem monitoring across 13,500 projects and 6 million acres.",
+    "sources": [
+      "chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.91,
+    "timestamp": 1760434336823
+  },
+  "hpe server security": {
+    "responseText": "ProLiant servers feature industry-leading security with HPE iLO Silicon Root of Trust providing multi-layered protection embedded in hardware. Additional security includes secure boot, firmware validation, encrypted communications, physical intrusion detection, zero-trust architecture, and continuous verification of hardware, operating systems, and workloads. Gen12 enhances security for current and future threats with security-first design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336823
+  },
+  "proliant security": {
+    "responseText": "ProLiant servers feature industry-leading security with HPE iLO Silicon Root of Trust providing multi-layered protection embedded in hardware. Additional security includes secure boot, firmware validation, encrypted communications, physical intrusion detection, zero-trust architecture, and continuous verification of hardware, operating systems, and workloads. Gen12 enhances security for current and future threats with security-first design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336823
+  },
+  "what security does proliant have": {
+    "responseText": "ProLiant servers feature industry-leading security with HPE iLO Silicon Root of Trust providing multi-layered protection embedded in hardware. Additional security includes secure boot, firmware validation, encrypted communications, physical intrusion detection, zero-trust architecture, and continuous verification of hardware, operating systems, and workloads. Gen12 enhances security for current and future threats with security-first design.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336823
+  },
+  "what is silicon root of trust": {
+    "responseText": "Silicon Root of Trust is a security foundation embedded within ProLiant server hardware. It provides immutable firmware protection, secure boot validation, runtime firmware verification, and hardware-based intrusion detection. This creates multiple security layers to protect against physical and digital threats throughout the server lifecycle, safeguarding every phase with enhanced physical and digital intrusion resistance.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336823
+  },
+  "root of trust security": {
+    "responseText": "Silicon Root of Trust is a security foundation embedded within ProLiant server hardware. It provides immutable firmware protection, secure boot validation, runtime firmware verification, and hardware-based intrusion detection. This creates multiple security layers to protect against physical and digital threats throughout the server lifecycle, safeguarding every phase with enhanced physical and digital intrusion resistance.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336823
+  },
+  "vmware support": {
+    "responseText": "ProLiant servers excel at virtualization with support for VMware, KVM, Hyper-V, and other hypervisors. HPE Morpheus VM Essentials provides unified management for both KVM and VMware environments from a single interface. Gen12 servers offer improved virtualization density and performance with advanced processor features, increased memory capacity up to 4TB DDR5, and reduced cost and complexity of virtualized workloads.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.88,
+    "timestamp": 1760434336823
+  },
+  "hypervisor support": {
+    "responseText": "ProLiant servers excel at virtualization with support for VMware, KVM, Hyper-V, and other hypervisors. HPE Morpheus VM Essentials provides unified management for both KVM and VMware environments from a single interface. Gen12 servers offer improved virtualization density and performance with advanced processor features, increased memory capacity up to 4TB DDR5, and reduced cost and complexity of virtualized workloads.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.88,
+    "timestamp": 1760434336823
+  },
+  "does proliant support virtualization": {
+    "responseText": "ProLiant servers excel at virtualization with support for VMware, KVM, Hyper-V, and other hypervisors. HPE Morpheus VM Essentials provides unified management for both KVM and VMware environments from a single interface. Gen12 servers offer improved virtualization density and performance with advanced processor features, increased memory capacity up to 4TB DDR5, and reduced cost and complexity of virtualized workloads.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.88,
+    "timestamp": 1760434336823
+  },
+  "kvm support": {
+    "responseText": "ProLiant servers excel at virtualization with support for VMware, KVM, Hyper-V, and other hypervisors. HPE Morpheus VM Essentials provides unified management for both KVM and VMware environments from a single interface. Gen12 servers offer improved virtualization density and performance with advanced processor features, increased memory capacity up to 4TB DDR5, and reduced cost and complexity of virtualized workloads.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.88,
+    "timestamp": 1760434336823
+  },
+  "artificial intelligence support": {
+    "responseText": "Gen12 ProLiant servers are optimized for AI workloads including generative AI fine-tuning, inference, and training. DL380 supports flexible GPU configurations with up to 16 single-wide GPUs, DL384 features NVIDIA GH200 for AI inference, and XD685 provides maximum power with 8x NVIDIA H200 SXM or Blackwell B200 GPUs for large model training. All include AI-driven management through Compute Ops Management.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336823
+  },
+  "ai capabilities": {
+    "responseText": "Gen12 ProLiant servers are optimized for AI workloads including generative AI fine-tuning, inference, and training. DL380 supports flexible GPU configurations with up to 16 single-wide GPUs, DL384 features NVIDIA GH200 for AI inference, and XD685 provides maximum power with 8x NVIDIA H200 SXM or Blackwell B200 GPUs for large model training. All include AI-driven management through Compute Ops Management.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336823
+  },
+  "machine learning support": {
+    "responseText": "Gen12 ProLiant servers are optimized for AI workloads including generative AI fine-tuning, inference, and training. DL380 supports flexible GPU configurations with up to 16 single-wide GPUs, DL384 features NVIDIA GH200 for AI inference, and XD685 provides maximum power with 8x NVIDIA H200 SXM or Blackwell B200 GPUs for large model training. All include AI-driven management through Compute Ops Management.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336823
+  },
+  "graphics card support": {
+    "responseText": "HPE ProLiant servers support various GPU configurations. DL380 Gen12 accommodates up to 10 double-wide or 16 single-wide GPUs. DL384 features NVIDIA GH200 NVL2. XD685 supports 8x NVIDIA H200 SXM or 8x NVIDIA Blackwell (B200) GPUs with advanced cooling including direct liquid cooling for sustained AI performance and ultra-scalable GPU acceleration.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.94,
+    "timestamp": 1760434336823
+  },
+  "what gpus does proliant support": {
+    "responseText": "HPE ProLiant servers support various GPU configurations. DL380 Gen12 accommodates up to 10 double-wide or 16 single-wide GPUs. DL384 features NVIDIA GH200 NVL2. XD685 supports 8x NVIDIA H200 SXM or 8x NVIDIA Blackwell (B200) GPUs with advanced cooling including direct liquid cooling for sustained AI performance and ultra-scalable GPU acceleration.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.94,
+    "timestamp": 1760434336823
+  },
+  "nvidia gpu support": {
+    "responseText": "HPE ProLiant servers support various GPU configurations. DL380 Gen12 accommodates up to 10 double-wide or 16 single-wide GPUs. DL384 features NVIDIA GH200 NVL2. XD685 supports 8x NVIDIA H200 SXM or 8x NVIDIA Blackwell (B200) GPUs with advanced cooling including direct liquid cooling for sustained AI performance and ultra-scalable GPU acceleration.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.94,
+    "timestamp": 1760434336823
+  },
+  "environmental impact": {
+    "responseText": "HPE ProLiant Gen12 supports sustainability through 65% power savings, 7:1 server consolidation reducing hardware needs, improved performance per watt (41% better), asset upcycling services, circular economy practices, and energy-efficient design. HPE Financial Services processed 9.2 million assets with 86-94% going back into market for reuse, supporting environmental goals and reducing e-waste.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.88,
+    "timestamp": 1760434336823
+  },
+  "green computing": {
+    "responseText": "HPE ProLiant Gen12 supports sustainability through 65% power savings, 7:1 server consolidation reducing hardware needs, improved performance per watt (41% better), asset upcycling services, circular economy practices, and energy-efficient design. HPE Financial Services processed 9.2 million assets with 86-94% going back into market for reuse, supporting environmental goals and reducing e-waste.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.88,
+    "timestamp": 1760434336823
+  },
+  "eco friendly servers": {
+    "responseText": "HPE ProLiant Gen12 supports sustainability through 65% power savings, 7:1 server consolidation reducing hardware needs, improved performance per watt (41% better), asset upcycling services, circular economy practices, and energy-efficient design. HPE Financial Services processed 9.2 million assets with 86-94% going back into market for reuse, supporting environmental goals and reducing e-waste.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.88,
+    "timestamp": 1760434336823
+  },
+  "what services does hpe offer": {
+    "responseText": "HPE Services include Advisory and Professional Services for planning and integration, Support Services like HPE Complete Care and Tech Care with AI-powered monitoring, HPE Managed Services for infrastructure management, Education Services for training, and HPE Financial Services for asset lifecycle management. Services help accelerate business outcomes, optimize operations, and maximize IT investments from edge to cloud.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.87,
+    "timestamp": 1760434336823
+  },
+  "hpe support services": {
+    "responseText": "HPE Services include Advisory and Professional Services for planning and integration, Support Services like HPE Complete Care and Tech Care with AI-powered monitoring, HPE Managed Services for infrastructure management, Education Services for training, and HPE Financial Services for asset lifecycle management. Services help accelerate business outcomes, optimize operations, and maximize IT investments from edge to cloud.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.87,
+    "timestamp": 1760434336823
+  },
+  "hpe professional services": {
+    "responseText": "HPE Services include Advisory and Professional Services for planning and integration, Support Services like HPE Complete Care and Tech Care with AI-powered monitoring, HPE Managed Services for infrastructure management, Education Services for training, and HPE Financial Services for asset lifecycle management. Services help accelerate business outcomes, optimize operations, and maximize IT investments from edge to cloud.",
+    "sources": [
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.87,
+    "timestamp": 1760434336823
+  },
+  "good afternoon": {
+    "responseText": "Hello! I'm your HPE ProLiant AI assistant. I can help you with information about HPE ProLiant servers, including Gen12 systems, specifications, features, customer success stories, and best practices. What would you like to know?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "greetings": {
+    "responseText": "Hello! I'm your HPE ProLiant AI assistant. I can help you with information about HPE ProLiant servers, including Gen12 systems, specifications, features, customer success stories, and best practices. What would you like to know?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "thank you very much": {
+    "responseText": "You're welcome! Feel free to ask if you have any more questions about HPE ProLiant servers.",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "appreciate it": {
+    "responseText": "You're welcome! Feel free to ask if you have any more questions about HPE ProLiant servers.",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "goodbye": {
+    "responseText": "Goodbye! Feel free to come back anytime you need information about HPE ProLiant servers. Have a great day!",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "see you": {
+    "responseText": "Goodbye! Feel free to come back anytime you need information about HPE ProLiant servers. Have a great day!",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "farewell": {
+    "responseText": "Goodbye! Feel free to come back anytime you need information about HPE ProLiant servers. Have a great day!",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "tell me about gen11 servers": {
+    "responseText": "Yes, HPE ProLiant Gen11 servers exist and are engineered for hybrid cloud environments. They are secure, efficient, and optimized with cloud operating experience and fundamental security built from silicon to software. Gen11 features include 2x more I/O bandwidth with PCIe Gen5, 33% more GPU density, 50% more cores per CPU, up to 5x faster firmware updates, and world record energy efficiency. They support 4th Gen AMD EPYC processors up to 128 cores and Intel Xeon Scalable processors, with comprehensive management through HPE iLO and HPE Compute Ops Management.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "explain gen11 servers": {
+    "responseText": "Yes, HPE ProLiant Gen11 servers exist and are engineered for hybrid cloud environments. They are secure, efficient, and optimized with cloud operating experience and fundamental security built from silicon to software. Gen11 features include 2x more I/O bandwidth with PCIe Gen5, 33% more GPU density, 50% more cores per CPU, up to 5x faster firmware updates, and world record energy efficiency. They support 4th Gen AMD EPYC processors up to 128 cores and Intel Xeon Scalable processors, with comprehensive management through HPE iLO and HPE Compute Ops Management.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "what is gen11": {
+    "responseText": "Yes, HPE ProLiant Gen11 servers exist and are engineered for hybrid cloud environments. They are secure, efficient, and optimized with cloud operating experience and fundamental security built from silicon to software. Gen11 features include 2x more I/O bandwidth with PCIe Gen5, 33% more GPU density, 50% more cores per CPU, up to 5x faster firmware updates, and world record energy efficiency. They support 4th Gen AMD EPYC processors up to 128 cores and Intel Xeon Scalable processors, with comprehensive management through HPE iLO and HPE Compute Ops Management.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "what are gen11 servers": {
+    "responseText": "Yes, HPE ProLiant Gen11 servers exist and are engineered for hybrid cloud environments. They are secure, efficient, and optimized with cloud operating experience and fundamental security built from silicon to software. Gen11 features include 2x more I/O bandwidth with PCIe Gen5, 33% more GPU density, 50% more cores per CPU, up to 5x faster firmware updates, and world record energy efficiency. They support 4th Gen AMD EPYC processors up to 128 cores and Intel Xeon Scalable processors, with comprehensive management through HPE iLO and HPE Compute Ops Management.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "gen11 server information": {
+    "responseText": "Yes, HPE ProLiant Gen11 servers exist and are engineered for hybrid cloud environments. They are secure, efficient, and optimized with cloud operating experience and fundamental security built from silicon to software. Gen11 features include 2x more I/O bandwidth with PCIe Gen5, 33% more GPU density, 50% more cores per CPU, up to 5x faster firmware updates, and world record energy efficiency. They support 4th Gen AMD EPYC processors up to 128 cores and Intel Xeon Scalable processors, with comprehensive management through HPE iLO and HPE Compute Ops Management.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "describe gen11 servers": {
+    "responseText": "Yes, HPE ProLiant Gen11 servers exist and are engineered for hybrid cloud environments. They are secure, efficient, and optimized with cloud operating experience and fundamental security built from silicon to software. Gen11 features include 2x more I/O bandwidth with PCIe Gen5, 33% more GPU density, 50% more cores per CPU, up to 5x faster firmware updates, and world record energy efficiency. They support 4th Gen AMD EPYC processors up to 128 cores and Intel Xeon Scalable processors, with comprehensive management through HPE iLO and HPE Compute Ops Management.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "gen11 server details": {
+    "responseText": "Yes, HPE ProLiant Gen11 servers exist and are engineered for hybrid cloud environments. They are secure, efficient, and optimized with cloud operating experience and fundamental security built from silicon to software. Gen11 features include 2x more I/O bandwidth with PCIe Gen5, 33% more GPU density, 50% more cores per CPU, up to 5x faster firmware updates, and world record energy efficiency. They support 4th Gen AMD EPYC processors up to 128 cores and Intel Xeon Scalable processors, with comprehensive management through HPE iLO and HPE Compute Ops Management.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "info about gen11": {
+    "responseText": "Yes, HPE ProLiant Gen11 servers exist and are engineered for hybrid cloud environments. They are secure, efficient, and optimized with cloud operating experience and fundamental security built from silicon to software. Gen11 features include 2x more I/O bandwidth with PCIe Gen5, 33% more GPU density, 50% more cores per CPU, up to 5x faster firmware updates, and world record energy efficiency. They support 4th Gen AMD EPYC processors up to 128 cores and Intel Xeon Scalable processors, with comprehensive management through HPE iLO and HPE Compute Ops Management.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "tell me gen11": {
+    "responseText": "Yes, HPE ProLiant Gen11 servers exist and are engineered for hybrid cloud environments. They are secure, efficient, and optimized with cloud operating experience and fundamental security built from silicon to software. Gen11 features include 2x more I/O bandwidth with PCIe Gen5, 33% more GPU density, 50% more cores per CPU, up to 5x faster firmware updates, and world record energy efficiency. They support 4th Gen AMD EPYC processors up to 128 cores and Intel Xeon Scalable processors, with comprehensive management through HPE iLO and HPE Compute Ops Management.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "explain about gen11": {
+    "responseText": "Yes, HPE ProLiant Gen11 servers exist and are engineered for hybrid cloud environments. They are secure, efficient, and optimized with cloud operating experience and fundamental security built from silicon to software. Gen11 features include 2x more I/O bandwidth with PCIe Gen5, 33% more GPU density, 50% more cores per CPU, up to 5x faster firmware updates, and world record energy efficiency. They support 4th Gen AMD EPYC processors up to 128 cores and Intel Xeon Scalable processors, with comprehensive management through HPE iLO and HPE Compute Ops Management.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "do you have gen11": {
+    "responseText": "Yes, HPE ProLiant Gen11 servers exist and are engineered for hybrid cloud environments. They are secure, efficient, and optimized with cloud operating experience and fundamental security built from silicon to software. Gen11 features include 2x more I/O bandwidth with PCIe Gen5, 33% more GPU density, 50% more cores per CPU, up to 5x faster firmware updates, and world record energy efficiency. They support 4th Gen AMD EPYC processors up to 128 cores and Intel Xeon Scalable processors, with comprehensive management through HPE iLO and HPE Compute Ops Management.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "is there gen11": {
+    "responseText": "Yes, HPE ProLiant Gen11 servers exist and are engineered for hybrid cloud environments. They are secure, efficient, and optimized with cloud operating experience and fundamental security built from silicon to software. Gen11 features include 2x more I/O bandwidth with PCIe Gen5, 33% more GPU density, 50% more cores per CPU, up to 5x faster firmware updates, and world record energy efficiency. They support 4th Gen AMD EPYC processors up to 128 cores and Intel Xeon Scalable processors, with comprehensive management through HPE iLO and HPE Compute Ops Management.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "does gen11 exist": {
+    "responseText": "Yes, HPE ProLiant Gen11 servers exist and are engineered for hybrid cloud environments. They are secure, efficient, and optimized with cloud operating experience and fundamental security built from silicon to software. Gen11 features include 2x more I/O bandwidth with PCIe Gen5, 33% more GPU density, 50% more cores per CPU, up to 5x faster firmware updates, and world record energy efficiency. They support 4th Gen AMD EPYC processors up to 128 cores and Intel Xeon Scalable processors, with comprehensive management through HPE iLO and HPE Compute Ops Management.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336822
+  },
+  "gen11 vs gen12": {
+    "responseText": "Both Gen11 and Gen12 are current HPE ProLiant generations. Gen11 offers PCIe Gen5, 4th Gen AMD EPYC up to 128 cores, 2x more I/O bandwidth, and world record energy efficiency. Gen12 focuses on AI optimization with 41% better performance per watt compared to Gen10, 7:1 server consolidation, and 65% power savings. Gen12 emphasizes AI workloads and sustainability, while Gen11 excels in hybrid cloud environments with strong CPU and GPU density. Both feature iLO management and enterprise security.",
+    "sources": [
+      "hpe-proliant-gen11.pdf",
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336822
+  },
+  "compare gen11 and gen12": {
+    "responseText": "Both Gen11 and Gen12 are current HPE ProLiant generations. Gen11 offers PCIe Gen5, 4th Gen AMD EPYC up to 128 cores, 2x more I/O bandwidth, and world record energy efficiency. Gen12 focuses on AI optimization with 41% better performance per watt compared to Gen10, 7:1 server consolidation, and 65% power savings. Gen12 emphasizes AI workloads and sustainability, while Gen11 excels in hybrid cloud environments with strong CPU and GPU density. Both feature iLO management and enterprise security.",
+    "sources": [
+      "hpe-proliant-gen11.pdf",
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336822
+  },
+  "difference between gen11 and gen12": {
+    "responseText": "Both Gen11 and Gen12 are current HPE ProLiant generations. Gen11 offers PCIe Gen5, 4th Gen AMD EPYC up to 128 cores, 2x more I/O bandwidth, and world record energy efficiency. Gen12 focuses on AI optimization with 41% better performance per watt compared to Gen10, 7:1 server consolidation, and 65% power savings. Gen12 emphasizes AI workloads and sustainability, while Gen11 excels in hybrid cloud environments with strong CPU and GPU density. Both feature iLO management and enterprise security.",
+    "sources": [
+      "hpe-proliant-gen11.pdf",
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336822
+  },
+  "gen11 or gen12": {
+    "responseText": "Both Gen11 and Gen12 are current HPE ProLiant generations. Gen11 offers PCIe Gen5, 4th Gen AMD EPYC up to 128 cores, 2x more I/O bandwidth, and world record energy efficiency. Gen12 focuses on AI optimization with 41% better performance per watt compared to Gen10, 7:1 server consolidation, and 65% power savings. Gen12 emphasizes AI workloads and sustainability, while Gen11 excels in hybrid cloud environments with strong CPU and GPU density. Both feature iLO management and enterprise security.",
+    "sources": [
+      "hpe-proliant-gen11.pdf",
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336822
+  },
+  "which is better gen11 or gen12": {
+    "responseText": "Both Gen11 and Gen12 are current HPE ProLiant generations. Gen11 offers PCIe Gen5, 4th Gen AMD EPYC up to 128 cores, 2x more I/O bandwidth, and world record energy efficiency. Gen12 focuses on AI optimization with 41% better performance per watt compared to Gen10, 7:1 server consolidation, and 65% power savings. Gen12 emphasizes AI workloads and sustainability, while Gen11 excels in hybrid cloud environments with strong CPU and GPU density. Both feature iLO management and enterprise security.",
+    "sources": [
+      "hpe-proliant-gen11.pdf",
+      "json_chunks.json"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.92,
+    "timestamp": 1760434336822
+  },
+  "gen11 performance": {
+    "responseText": "Gen11 servers deliver exceptional performance with 2.76x higher compute-intensive integer throughput compared to Gen10, 3.37x higher floating point performance, 2.2x more users for OLTP workloads, and 1.68x higher virtualization performance with 19% better price performance. They support 50% more cores per CPU, 33% more GPU density, and 2x more I/O bandwidth with PCIe Gen5 for accelerated data and graphics workloads.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336822
+  },
+  "how fast is gen11": {
+    "responseText": "Gen11 servers deliver exceptional performance with 2.76x higher compute-intensive integer throughput compared to Gen10, 3.37x higher floating point performance, 2.2x more users for OLTP workloads, and 1.68x higher virtualization performance with 19% better price performance. They support 50% more cores per CPU, 33% more GPU density, and 2x more I/O bandwidth with PCIe Gen5 for accelerated data and graphics workloads.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336822
+  },
+  "gen11 speed": {
+    "responseText": "Gen11 servers deliver exceptional performance with 2.76x higher compute-intensive integer throughput compared to Gen10, 3.37x higher floating point performance, 2.2x more users for OLTP workloads, and 1.68x higher virtualization performance with 19% better price performance. They support 50% more cores per CPU, 33% more GPU density, and 2x more I/O bandwidth with PCIe Gen5 for accelerated data and graphics workloads.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336822
+  },
+  "gen11 benchmark": {
+    "responseText": "Gen11 servers deliver exceptional performance with 2.76x higher compute-intensive integer throughput compared to Gen10, 3.37x higher floating point performance, 2.2x more users for OLTP workloads, and 1.68x higher virtualization performance with 19% better price performance. They support 50% more cores per CPU, 33% more GPU density, and 2x more I/O bandwidth with PCIe Gen5 for accelerated data and graphics workloads.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336822
+  },
+  "performance of gen11": {
+    "responseText": "Gen11 servers deliver exceptional performance with 2.76x higher compute-intensive integer throughput compared to Gen10, 3.37x higher floating point performance, 2.2x more users for OLTP workloads, and 1.68x higher virtualization performance with 19% better price performance. They support 50% more cores per CPU, 33% more GPU density, and 2x more I/O bandwidth with PCIe Gen5 for accelerated data and graphics workloads.",
+    "sources": [
+      "hpe-proliant-gen11.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.93,
+    "timestamp": 1760434336822
+  },
+  "phoenixnap case study": {
+    "responseText": "phoenixNAP, a global IT service provider focusing on Infrastructure-as-a-Service (IaaS), was HPE's first customer to deploy DC-MHS (Data Center Modular Hardware System) servers. They use HPE ProLiant Gen12 modular servers across their 18 global data centers to provide cloud-native, scalable infrastructure. phoenixNAP can provision dedicated servers for customers in less than two minutes using HPE's modular building blocks. They support multiple markets including AdTech (advertising technology), FinTech (financial technology), and SLED (state, local, and education) sectors with high-performance, always-available infrastructure that works with cloud-like ease and simplicity.",
+    "sources": [
+      "PhoenixNAP Case Study.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "phoenixnap success story": {
+    "responseText": "phoenixNAP, a global IT service provider focusing on Infrastructure-as-a-Service (IaaS), was HPE's first customer to deploy DC-MHS (Data Center Modular Hardware System) servers. They use HPE ProLiant Gen12 modular servers across their 18 global data centers to provide cloud-native, scalable infrastructure. phoenixNAP can provision dedicated servers for customers in less than two minutes using HPE's modular building blocks. They support multiple markets including AdTech (advertising technology), FinTech (financial technology), and SLED (state, local, and education) sectors with high-performance, always-available infrastructure that works with cloud-like ease and simplicity.",
+    "sources": [
+      "PhoenixNAP Case Study.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "tell me about phoenixnap": {
+    "responseText": "phoenixNAP, a global IT service provider focusing on Infrastructure-as-a-Service (IaaS), was HPE's first customer to deploy DC-MHS (Data Center Modular Hardware System) servers. They use HPE ProLiant Gen12 modular servers across their 18 global data centers to provide cloud-native, scalable infrastructure. phoenixNAP can provision dedicated servers for customers in less than two minutes using HPE's modular building blocks. They support multiple markets including AdTech (advertising technology), FinTech (financial technology), and SLED (state, local, and education) sectors with high-performance, always-available infrastructure that works with cloud-like ease and simplicity.",
+    "sources": [
+      "PhoenixNAP Case Study.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "who uses hpe proliant": {
+    "responseText": "phoenixNAP, a global IT service provider focusing on Infrastructure-as-a-Service (IaaS), was HPE's first customer to deploy DC-MHS (Data Center Modular Hardware System) servers. They use HPE ProLiant Gen12 modular servers across their 18 global data centers to provide cloud-native, scalable infrastructure. phoenixNAP can provision dedicated servers for customers in less than two minutes using HPE's modular building blocks. They support multiple markets including AdTech (advertising technology), FinTech (financial technology), and SLED (state, local, and education) sectors with high-performance, always-available infrastructure that works with cloud-like ease and simplicity.",
+    "sources": [
+      "PhoenixNAP Case Study.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "phoenixnap hpe": {
+    "responseText": "phoenixNAP, a global IT service provider focusing on Infrastructure-as-a-Service (IaaS), was HPE's first customer to deploy DC-MHS (Data Center Modular Hardware System) servers. They use HPE ProLiant Gen12 modular servers across their 18 global data centers to provide cloud-native, scalable infrastructure. phoenixNAP can provision dedicated servers for customers in less than two minutes using HPE's modular building blocks. They support multiple markets including AdTech (advertising technology), FinTech (financial technology), and SLED (state, local, and education) sectors with high-performance, always-available infrastructure that works with cloud-like ease and simplicity.",
+    "sources": [
+      "PhoenixNAP Case Study.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "first customer gen12 modular": {
+    "responseText": "phoenixNAP, a global IT service provider focusing on Infrastructure-as-a-Service (IaaS), was HPE's first customer to deploy DC-MHS (Data Center Modular Hardware System) servers. They use HPE ProLiant Gen12 modular servers across their 18 global data centers to provide cloud-native, scalable infrastructure. phoenixNAP can provision dedicated servers for customers in less than two minutes using HPE's modular building blocks. They support multiple markets including AdTech (advertising technology), FinTech (financial technology), and SLED (state, local, and education) sectors with high-performance, always-available infrastructure that works with cloud-like ease and simplicity.",
+    "sources": [
+      "PhoenixNAP Case Study.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "modular server customer": {
+    "responseText": "phoenixNAP, a global IT service provider focusing on Infrastructure-as-a-Service (IaaS), was HPE's first customer to deploy DC-MHS (Data Center Modular Hardware System) servers. They use HPE ProLiant Gen12 modular servers across their 18 global data centers to provide cloud-native, scalable infrastructure. phoenixNAP can provision dedicated servers for customers in less than two minutes using HPE's modular building blocks. They support multiple markets including AdTech (advertising technology), FinTech (financial technology), and SLED (state, local, and education) sectors with high-performance, always-available infrastructure that works with cloud-like ease and simplicity.",
+    "sources": [
+      "PhoenixNAP Case Study.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "phoenixnap deployment": {
+    "responseText": "phoenixNAP, a global IT service provider focusing on Infrastructure-as-a-Service (IaaS), was HPE's first customer to deploy DC-MHS (Data Center Modular Hardware System) servers. They use HPE ProLiant Gen12 modular servers across their 18 global data centers to provide cloud-native, scalable infrastructure. phoenixNAP can provision dedicated servers for customers in less than two minutes using HPE's modular building blocks. They support multiple markets including AdTech (advertising technology), FinTech (financial technology), and SLED (state, local, and education) sectors with high-performance, always-available infrastructure that works with cloud-like ease and simplicity.",
+    "sources": [
+      "PhoenixNAP Case Study.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "iaas provider hpe": {
+    "responseText": "phoenixNAP, a global IT service provider focusing on Infrastructure-as-a-Service (IaaS), was HPE's first customer to deploy DC-MHS (Data Center Modular Hardware System) servers. They use HPE ProLiant Gen12 modular servers across their 18 global data centers to provide cloud-native, scalable infrastructure. phoenixNAP can provision dedicated servers for customers in less than two minutes using HPE's modular building blocks. They support multiple markets including AdTech (advertising technology), FinTech (financial technology), and SLED (state, local, and education) sectors with high-performance, always-available infrastructure that works with cloud-like ease and simplicity.",
+    "sources": [
+      "PhoenixNAP Case Study.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "phoenixnap data centers": {
+    "responseText": "phoenixNAP, a global IT service provider focusing on Infrastructure-as-a-Service (IaaS), was HPE's first customer to deploy DC-MHS (Data Center Modular Hardware System) servers. They use HPE ProLiant Gen12 modular servers across their 18 global data centers to provide cloud-native, scalable infrastructure. phoenixNAP can provision dedicated servers for customers in less than two minutes using HPE's modular building blocks. They support multiple markets including AdTech (advertising technology), FinTech (financial technology), and SLED (state, local, and education) sectors with high-performance, always-available infrastructure that works with cloud-like ease and simplicity.",
+    "sources": [
+      "PhoenixNAP Case Study.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "phoenixnap benefits": {
+    "responseText": "phoenixNAP chose HPE ProLiant modular servers for several key benefits: 1) Reusable building blocks for multiple designs across markets and business models, 2) Speed upgrades to new server generations with minimal disruption, 3) Streamlined deployment with less than 2-minute server provisioning, 4) Pay-per-use consumption model where customers pay only for resources they consume, 5) Interoperable and compatible data centers with consistent interfaces and form factors, 6) Reduced TCO from modular innovations and sourcing across HPE partner ecosystem, 7) Security engineered from silicon all the way through to software, and 8) Cloud-like ease and simplicity for bringing apps and workloads closer to DevSecOps teams.",
+    "sources": [
+      "PhoenixNAP Case Study.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "why phoenixnap chose hpe": {
+    "responseText": "phoenixNAP chose HPE ProLiant modular servers for several key benefits: 1) Reusable building blocks for multiple designs across markets and business models, 2) Speed upgrades to new server generations with minimal disruption, 3) Streamlined deployment with less than 2-minute server provisioning, 4) Pay-per-use consumption model where customers pay only for resources they consume, 5) Interoperable and compatible data centers with consistent interfaces and form factors, 6) Reduced TCO from modular innovations and sourcing across HPE partner ecosystem, 7) Security engineered from silicon all the way through to software, and 8) Cloud-like ease and simplicity for bringing apps and workloads closer to DevSecOps teams.",
+    "sources": [
+      "PhoenixNAP Case Study.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "phoenixnap advantages": {
+    "responseText": "phoenixNAP chose HPE ProLiant modular servers for several key benefits: 1) Reusable building blocks for multiple designs across markets and business models, 2) Speed upgrades to new server generations with minimal disruption, 3) Streamlined deployment with less than 2-minute server provisioning, 4) Pay-per-use consumption model where customers pay only for resources they consume, 5) Interoperable and compatible data centers with consistent interfaces and form factors, 6) Reduced TCO from modular innovations and sourcing across HPE partner ecosystem, 7) Security engineered from silicon all the way through to software, and 8) Cloud-like ease and simplicity for bringing apps and workloads closer to DevSecOps teams.",
+    "sources": [
+      "PhoenixNAP Case Study.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "modular server benefits phoenixnap": {
+    "responseText": "phoenixNAP chose HPE ProLiant modular servers for several key benefits: 1) Reusable building blocks for multiple designs across markets and business models, 2) Speed upgrades to new server generations with minimal disruption, 3) Streamlined deployment with less than 2-minute server provisioning, 4) Pay-per-use consumption model where customers pay only for resources they consume, 5) Interoperable and compatible data centers with consistent interfaces and form factors, 6) Reduced TCO from modular innovations and sourcing across HPE partner ecosystem, 7) Security engineered from silicon all the way through to software, and 8) Cloud-like ease and simplicity for bringing apps and workloads closer to DevSecOps teams.",
+    "sources": [
+      "PhoenixNAP Case Study.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "phoenixnap deployment speed": {
+    "responseText": "phoenixNAP chose HPE ProLiant modular servers for several key benefits: 1) Reusable building blocks for multiple designs across markets and business models, 2) Speed upgrades to new server generations with minimal disruption, 3) Streamlined deployment with less than 2-minute server provisioning, 4) Pay-per-use consumption model where customers pay only for resources they consume, 5) Interoperable and compatible data centers with consistent interfaces and form factors, 6) Reduced TCO from modular innovations and sourcing across HPE partner ecosystem, 7) Security engineered from silicon all the way through to software, and 8) Cloud-like ease and simplicity for bringing apps and workloads closer to DevSecOps teams.",
+    "sources": [
+      "PhoenixNAP Case Study.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "phoenixnap migration": {
+    "responseText": "phoenixNAP chose HPE ProLiant modular servers for several key benefits: 1) Reusable building blocks for multiple designs across markets and business models, 2) Speed upgrades to new server generations with minimal disruption, 3) Streamlined deployment with less than 2-minute server provisioning, 4) Pay-per-use consumption model where customers pay only for resources they consume, 5) Interoperable and compatible data centers with consistent interfaces and form factors, 6) Reduced TCO from modular innovations and sourcing across HPE partner ecosystem, 7) Security engineered from silicon all the way through to software, and 8) Cloud-like ease and simplicity for bringing apps and workloads closer to DevSecOps teams.",
+    "sources": [
+      "PhoenixNAP Case Study.pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "next gen servers": {
+    "responseText": "HPE Next-Gen modular servers represent the future of data center infrastructure using the OCP DC-MHS (Open Compute Project Data Center Modular Hardware System) specification. These modular servers allow you to mix and match components like CPUs, memory, storage, and networking independently. Key benefits include: 1) Faster upgrades without replacing entire servers, 2) Improved sustainability and reusability, 3) Better energy efficiency, 4) Plug-and-play compatibility, 5) Reduced TCO, and 6) Flexibility to upgrade individual modules (CPU, memory, security, storage, networking) on different timelines. HPE is driving M-PnP (Modular Plug and Play) technologies to enable real plug-and-play within modular data centers.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "next generation servers": {
+    "responseText": "HPE Next-Gen modular servers represent the future of data center infrastructure using the OCP DC-MHS (Open Compute Project Data Center Modular Hardware System) specification. These modular servers allow you to mix and match components like CPUs, memory, storage, and networking independently. Key benefits include: 1) Faster upgrades without replacing entire servers, 2) Improved sustainability and reusability, 3) Better energy efficiency, 4) Plug-and-play compatibility, 5) Reduced TCO, and 6) Flexibility to upgrade individual modules (CPU, memory, security, storage, networking) on different timelines. HPE is driving M-PnP (Modular Plug and Play) technologies to enable real plug-and-play within modular data centers.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "hpe next-gen": {
+    "responseText": "HPE Next-Gen modular servers represent the future of data center infrastructure using the OCP DC-MHS (Open Compute Project Data Center Modular Hardware System) specification. These modular servers allow you to mix and match components like CPUs, memory, storage, and networking independently. Key benefits include: 1) Faster upgrades without replacing entire servers, 2) Improved sustainability and reusability, 3) Better energy efficiency, 4) Plug-and-play compatibility, 5) Reduced TCO, and 6) Flexibility to upgrade individual modules (CPU, memory, security, storage, networking) on different timelines. HPE is driving M-PnP (Modular Plug and Play) technologies to enable real plug-and-play within modular data centers.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "future of servers": {
+    "responseText": "HPE Next-Gen modular servers represent the future of data center infrastructure using the OCP DC-MHS (Open Compute Project Data Center Modular Hardware System) specification. These modular servers allow you to mix and match components like CPUs, memory, storage, and networking independently. Key benefits include: 1) Faster upgrades without replacing entire servers, 2) Improved sustainability and reusability, 3) Better energy efficiency, 4) Plug-and-play compatibility, 5) Reduced TCO, and 6) Flexibility to upgrade individual modules (CPU, memory, security, storage, networking) on different timelines. HPE is driving M-PnP (Modular Plug and Play) technologies to enable real plug-and-play within modular data centers.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "modular servers": {
+    "responseText": "HPE Next-Gen modular servers represent the future of data center infrastructure using the OCP DC-MHS (Open Compute Project Data Center Modular Hardware System) specification. These modular servers allow you to mix and match components like CPUs, memory, storage, and networking independently. Key benefits include: 1) Faster upgrades without replacing entire servers, 2) Improved sustainability and reusability, 3) Better energy efficiency, 4) Plug-and-play compatibility, 5) Reduced TCO, and 6) Flexibility to upgrade individual modules (CPU, memory, security, storage, networking) on different timelines. HPE is driving M-PnP (Modular Plug and Play) technologies to enable real plug-and-play within modular data centers.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "what are modular servers": {
+    "responseText": "HPE Next-Gen modular servers represent the future of data center infrastructure using the OCP DC-MHS (Open Compute Project Data Center Modular Hardware System) specification. These modular servers allow you to mix and match components like CPUs, memory, storage, and networking independently. Key benefits include: 1) Faster upgrades without replacing entire servers, 2) Improved sustainability and reusability, 3) Better energy efficiency, 4) Plug-and-play compatibility, 5) Reduced TCO, and 6) Flexibility to upgrade individual modules (CPU, memory, security, storage, networking) on different timelines. HPE is driving M-PnP (Modular Plug and Play) technologies to enable real plug-and-play within modular data centers.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "dc-mhs servers": {
+    "responseText": "HPE Next-Gen modular servers represent the future of data center infrastructure using the OCP DC-MHS (Open Compute Project Data Center Modular Hardware System) specification. These modular servers allow you to mix and match components like CPUs, memory, storage, and networking independently. Key benefits include: 1) Faster upgrades without replacing entire servers, 2) Improved sustainability and reusability, 3) Better energy efficiency, 4) Plug-and-play compatibility, 5) Reduced TCO, and 6) Flexibility to upgrade individual modules (CPU, memory, security, storage, networking) on different timelines. HPE is driving M-PnP (Modular Plug and Play) technologies to enable real plug-and-play within modular data centers.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "data center modular hardware": {
+    "responseText": "HPE Next-Gen modular servers represent the future of data center infrastructure using the OCP DC-MHS (Open Compute Project Data Center Modular Hardware System) specification. These modular servers allow you to mix and match components like CPUs, memory, storage, and networking independently. Key benefits include: 1) Faster upgrades without replacing entire servers, 2) Improved sustainability and reusability, 3) Better energy efficiency, 4) Plug-and-play compatibility, 5) Reduced TCO, and 6) Flexibility to upgrade individual modules (CPU, memory, security, storage, networking) on different timelines. HPE is driving M-PnP (Modular Plug and Play) technologies to enable real plug-and-play within modular data centers.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "modular server advantages": {
+    "responseText": "HPE modular servers offer significant advantages over traditional monolithic servers: 1) Decoupled development - Security, storage, and networking modules can advance independently from CPU cycles, 2) Faster innovation - New technologies advance at full speed with ability to replace older modules, 3) Flexibility - Upgrade CPU and memory modules separately without replacing entire servers, 4) Sustainability - Reuse chassis and modules across generations reducing e-waste, 5) Energy efficiency - More efficient power supplies and better thermal design, 6) Scalability - Scale up or down by adding/removing modules as needed, 7) Reduced downtime - Hot-swap modules without shutting down servers, and 8) Lower TCO - Pay only for what you need and upgrade incrementally.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "benefits of modular servers": {
+    "responseText": "HPE modular servers offer significant advantages over traditional monolithic servers: 1) Decoupled development - Security, storage, and networking modules can advance independently from CPU cycles, 2) Faster innovation - New technologies advance at full speed with ability to replace older modules, 3) Flexibility - Upgrade CPU and memory modules separately without replacing entire servers, 4) Sustainability - Reuse chassis and modules across generations reducing e-waste, 5) Energy efficiency - More efficient power supplies and better thermal design, 6) Scalability - Scale up or down by adding/removing modules as needed, 7) Reduced downtime - Hot-swap modules without shutting down servers, and 8) Lower TCO - Pay only for what you need and upgrade incrementally.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "why modular servers": {
+    "responseText": "HPE modular servers offer significant advantages over traditional monolithic servers: 1) Decoupled development - Security, storage, and networking modules can advance independently from CPU cycles, 2) Faster innovation - New technologies advance at full speed with ability to replace older modules, 3) Flexibility - Upgrade CPU and memory modules separately without replacing entire servers, 4) Sustainability - Reuse chassis and modules across generations reducing e-waste, 5) Energy efficiency - More efficient power supplies and better thermal design, 6) Scalability - Scale up or down by adding/removing modules as needed, 7) Reduced downtime - Hot-swap modules without shutting down servers, and 8) Lower TCO - Pay only for what you need and upgrade incrementally.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "modular vs traditional servers": {
+    "responseText": "HPE modular servers offer significant advantages over traditional monolithic servers: 1) Decoupled development - Security, storage, and networking modules can advance independently from CPU cycles, 2) Faster innovation - New technologies advance at full speed with ability to replace older modules, 3) Flexibility - Upgrade CPU and memory modules separately without replacing entire servers, 4) Sustainability - Reuse chassis and modules across generations reducing e-waste, 5) Energy efficiency - More efficient power supplies and better thermal design, 6) Scalability - Scale up or down by adding/removing modules as needed, 7) Reduced downtime - Hot-swap modules without shutting down servers, and 8) Lower TCO - Pay only for what you need and upgrade incrementally.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "advantages of dc-mhs": {
+    "responseText": "HPE modular servers offer significant advantages over traditional monolithic servers: 1) Decoupled development - Security, storage, and networking modules can advance independently from CPU cycles, 2) Faster innovation - New technologies advance at full speed with ability to replace older modules, 3) Flexibility - Upgrade CPU and memory modules separately without replacing entire servers, 4) Sustainability - Reuse chassis and modules across generations reducing e-waste, 5) Energy efficiency - More efficient power supplies and better thermal design, 6) Scalability - Scale up or down by adding/removing modules as needed, 7) Reduced downtime - Hot-swap modules without shutting down servers, and 8) Lower TCO - Pay only for what you need and upgrade incrementally.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "modular server benefits": {
+    "responseText": "HPE modular servers offer significant advantages over traditional monolithic servers: 1) Decoupled development - Security, storage, and networking modules can advance independently from CPU cycles, 2) Faster innovation - New technologies advance at full speed with ability to replace older modules, 3) Flexibility - Upgrade CPU and memory modules separately without replacing entire servers, 4) Sustainability - Reuse chassis and modules across generations reducing e-waste, 5) Energy efficiency - More efficient power supplies and better thermal design, 6) Scalability - Scale up or down by adding/removing modules as needed, 7) Reduced downtime - Hot-swap modules without shutting down servers, and 8) Lower TCO - Pay only for what you need and upgrade incrementally.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "ocp dc-mhs": {
+    "responseText": "OCP DC-MHS (Open Compute Project Data Center Modular Hardware System) is an open specification for modular server design that defines common electrical interfaces, signaling, form factors, and physical layouts. It enables interoperability between components from different vendors, allowing data centers to mix and match CPUs, memory, storage, networking, and power modules. HPE is actively contributing to OCP DC-MHS and driving the development of M-PnP (Modular Plug and Play) technologies for true plug-and-play compatibility. The specification promotes sustainability, flexibility, and faster innovation by decoupling module development from CPU vendor timelines.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "what is dc-mhs": {
+    "responseText": "OCP DC-MHS (Open Compute Project Data Center Modular Hardware System) is an open specification for modular server design that defines common electrical interfaces, signaling, form factors, and physical layouts. It enables interoperability between components from different vendors, allowing data centers to mix and match CPUs, memory, storage, networking, and power modules. HPE is actively contributing to OCP DC-MHS and driving the development of M-PnP (Modular Plug and Play) technologies for true plug-and-play compatibility. The specification promotes sustainability, flexibility, and faster innovation by decoupling module development from CPU vendor timelines.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "data center modular hardware system": {
+    "responseText": "OCP DC-MHS (Open Compute Project Data Center Modular Hardware System) is an open specification for modular server design that defines common electrical interfaces, signaling, form factors, and physical layouts. It enables interoperability between components from different vendors, allowing data centers to mix and match CPUs, memory, storage, networking, and power modules. HPE is actively contributing to OCP DC-MHS and driving the development of M-PnP (Modular Plug and Play) technologies for true plug-and-play compatibility. The specification promotes sustainability, flexibility, and faster innovation by decoupling module development from CPU vendor timelines.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "open compute project servers": {
+    "responseText": "OCP DC-MHS (Open Compute Project Data Center Modular Hardware System) is an open specification for modular server design that defines common electrical interfaces, signaling, form factors, and physical layouts. It enables interoperability between components from different vendors, allowing data centers to mix and match CPUs, memory, storage, networking, and power modules. HPE is actively contributing to OCP DC-MHS and driving the development of M-PnP (Modular Plug and Play) technologies for true plug-and-play compatibility. The specification promotes sustainability, flexibility, and faster innovation by decoupling module development from CPU vendor timelines.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "ocp specification": {
+    "responseText": "OCP DC-MHS (Open Compute Project Data Center Modular Hardware System) is an open specification for modular server design that defines common electrical interfaces, signaling, form factors, and physical layouts. It enables interoperability between components from different vendors, allowing data centers to mix and match CPUs, memory, storage, networking, and power modules. HPE is actively contributing to OCP DC-MHS and driving the development of M-PnP (Modular Plug and Play) technologies for true plug-and-play compatibility. The specification promotes sustainability, flexibility, and faster innovation by decoupling module development from CPU vendor timelines.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "dc-mhs specification": {
+    "responseText": "OCP DC-MHS (Open Compute Project Data Center Modular Hardware System) is an open specification for modular server design that defines common electrical interfaces, signaling, form factors, and physical layouts. It enables interoperability between components from different vendors, allowing data centers to mix and match CPUs, memory, storage, networking, and power modules. HPE is actively contributing to OCP DC-MHS and driving the development of M-PnP (Modular Plug and Play) technologies for true plug-and-play compatibility. The specification promotes sustainability, flexibility, and faster innovation by decoupling module development from CPU vendor timelines.",
+    "sources": [
+      "HPE Next-Gen .pdf"
+    ],
+    "usedRAG": true,
+    "classification": "route",
+    "confidence": 0.95,
+    "timestamp": 1760434336823
+  },
+  "hi there": {
+    "responseText": "Hello! I'm your HPE ProLiant AI assistant. I can help you with information about HPE ProLiant servers, including Gen12 systems, specifications, features, customer success stories, and best practices. What would you like to know?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "hello there": {
+    "responseText": "Hello! I'm your HPE ProLiant AI assistant. I can help you with information about HPE ProLiant servers, including Gen12 systems, specifications, features, customer success stories, and best practices. What would you like to know?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "thanks a lot": {
+    "responseText": "You're welcome! Feel free to ask if you have any more questions about HPE ProLiant servers.",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "thx": {
+    "responseText": "You're welcome! Feel free to ask if you have any more questions about HPE ProLiant servers.",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "ty": {
+    "responseText": "You're welcome! Feel free to ask if you have any more questions about HPE ProLiant servers.",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "see you later": {
+    "responseText": "Goodbye! Feel free to come back anytime you need information about HPE ProLiant servers. Have a great day!",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "talk to you later": {
+    "responseText": "Goodbye! Feel free to come back anytime you need information about HPE ProLiant servers. Have a great day!",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "later": {
+    "responseText": "Goodbye! Feel free to come back anytime you need information about HPE ProLiant servers. Have a great day!",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "help": {
+    "responseText": "I can help you with HPE ProLiant server information including Gen11 and Gen12 specifications, DL380, DL360, DL384, and XD685 models, performance benchmarks, customer success stories, HPE GreenLake, iLO management, virtualization support, AI workloads, and sustainability features. What would you like to know?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "help me": {
+    "responseText": "I can help you with HPE ProLiant server information including Gen11 and Gen12 specifications, DL380, DL360, DL384, and XD685 models, performance benchmarks, customer success stories, HPE GreenLake, iLO management, virtualization support, AI workloads, and sustainability features. What would you like to know?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "i need help": {
+    "responseText": "I can help you with HPE ProLiant server information including Gen11 and Gen12 specifications, DL380, DL360, DL384, and XD685 models, performance benchmarks, customer success stories, HPE GreenLake, iLO management, virtualization support, AI workloads, and sustainability features. What would you like to know?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "can you help": {
+    "responseText": "I can help you with HPE ProLiant server information including Gen11 and Gen12 specifications, DL380, DL360, DL384, and XD685 models, performance benchmarks, customer success stories, HPE GreenLake, iLO management, virtualization support, AI workloads, and sustainability features. What would you like to know?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "what can you do": {
+    "responseText": "I can help you with HPE ProLiant server information including Gen11 and Gen12 specifications, DL380, DL360, DL384, and XD685 models, performance benchmarks, customer success stories, HPE GreenLake, iLO management, virtualization support, AI workloads, and sustainability features. What would you like to know?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "what can you help with": {
+    "responseText": "I can help you with HPE ProLiant server information including Gen11 and Gen12 specifications, DL380, DL360, DL384, and XD685 models, performance benchmarks, customer success stories, HPE GreenLake, iLO management, virtualization support, AI workloads, and sustainability features. What would you like to know?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "yes": {
+    "responseText": "Great! What would you like to know about HPE ProLiant servers?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "yeah": {
+    "responseText": "Great! What would you like to know about HPE ProLiant servers?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "yep": {
+    "responseText": "Great! What would you like to know about HPE ProLiant servers?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "sure": {
+    "responseText": "Great! What would you like to know about HPE ProLiant servers?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "ok": {
+    "responseText": "Great! What would you like to know about HPE ProLiant servers?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "okay": {
+    "responseText": "Great! What would you like to know about HPE ProLiant servers?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "alright": {
+    "responseText": "Great! What would you like to know about HPE ProLiant servers?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "sounds good": {
+    "responseText": "Great! What would you like to know about HPE ProLiant servers?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "no": {
+    "responseText": "No problem! If you need any information about HPE ProLiant servers later, just let me know.",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "nope": {
+    "responseText": "No problem! If you need any information about HPE ProLiant servers later, just let me know.",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "not really": {
+    "responseText": "No problem! If you need any information about HPE ProLiant servers later, just let me know.",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "no thanks": {
+    "responseText": "No problem! If you need any information about HPE ProLiant servers later, just let me know.",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "i'm good": {
+    "responseText": "No problem! If you need any information about HPE ProLiant servers later, just let me know.",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "tell me more": {
+    "responseText": "I'd be happy to provide more details! Could you please specify which HPE ProLiant topic you'd like to learn more about? For example, Gen12 features, specific server models like DL380, customer success stories, or technical specifications?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "more details": {
+    "responseText": "I'd be happy to provide more details! Could you please specify which HPE ProLiant topic you'd like to learn more about? For example, Gen12 features, specific server models like DL380, customer success stories, or technical specifications?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "continue": {
+    "responseText": "I'd be happy to provide more details! Could you please specify which HPE ProLiant topic you'd like to learn more about? For example, Gen12 features, specific server models like DL380, customer success stories, or technical specifications?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "go on": {
+    "responseText": "I'd be happy to provide more details! Could you please specify which HPE ProLiant topic you'd like to learn more about? For example, Gen12 features, specific server models like DL380, customer success stories, or technical specifications?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "what else": {
+    "responseText": "I'd be happy to provide more details! Could you please specify which HPE ProLiant topic you'd like to learn more about? For example, Gen12 features, specific server models like DL380, customer success stories, or technical specifications?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "more info": {
+    "responseText": "I'd be happy to provide more details! Could you please specify which HPE ProLiant topic you'd like to learn more about? For example, Gen12 features, specific server models like DL380, customer success stories, or technical specifications?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  },
+  "tell me about it": {
+    "responseText": "I'd be happy to provide more details! Could you please specify which HPE ProLiant topic you'd like to learn more about? For example, Gen12 features, specific server models like DL380, customer success stories, or technical specifications?",
+    "sources": [],
+    "usedRAG": false,
+    "classification": "greeting",
+    "confidence": 1,
+    "timestamp": 1760434336823
+  }
+}
