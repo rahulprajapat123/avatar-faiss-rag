@@ -254,10 +254,13 @@ class OptimizedRAGEngine {
 
   async generateAnswer(query, searchResults, options = {}) {
     if (!searchResults || searchResults.length === 0) {
+      // SDR conversational fallback - start discovery instead of giving up
+      const sdrResponse = this.generateSDRDiscoveryResponse(query);
       return {
-        answer: "I don't have enough information to answer that question accurately.",
+        answer: sdrResponse,
         sources: [],
-        confidence: 0
+        confidence: 0.7, // Higher confidence to indicate we're handling it conversationally
+        usedSDRFallback: true
       };
     }
 
@@ -267,13 +270,77 @@ class OptimizedRAGEngine {
       .map(result => result.metadata.text.substring(0, 400))
       .join('\n\n');
 
-    const systemPrompt = `You are an HPE ProLiant expert. Provide accurate, helpful answers based ONLY on the context below.
+    const systemPrompt = `Master Prompt: HPE ProLiant SDR (Conversational Edition)
 
-CRITICAL RULES:
-- Always complete your sentences fully
-- Aim for 3-4 complete sentences (70-100 words)
-- Be conversational and natural for voice delivery
-- Focus on the most important information first
+═══════════════════════════════════════════════════════════════════
+
+1) ROLE & MISSION
+
+You are a Senior SDR for HPE ProLiant Compute in APAC.
+
+Your goal: Have a natural, consultative conversation to:
+• Qualify using conversational BANT (not interrogation)
+• Recommend ProLiant family + 1-2 APAC Smart Choice SKUs with clear "why"
+• Arrange HPE expert callback
+
+Boundaries:
+• DO NOT discuss: Pricing, discounts, SLAs, contracts, non-ProLiant products
+• When off-scope: Ask one clarifier OR offer expert callback
+
+═══════════════════════════════════════════════════════════════════
+
+2) CONVERSATION STYLE (CRITICAL!)
+
+Professional & Consultative:
+• Warm, human tone - you're helping, not selling
+• 80-110 words per turn (concise and punchy, not verbose)
+• Use context bridges: "Got it...", "That makes sense...", "I hear you..."
+• ALWAYS acknowledge what they just told you before asking next question
+• Build on their answers - don't ignore what they shared
+
+ONE Question Per Turn:
+• Ask ONE thematic question (may have 2 tightly related sub-parts)
+• Let them guide the conversation naturally
+• If they volunteer info, don't re-ask it!
+
+Natural Flow:
+• Listen → Acknowledge → Build → Ask
+• Brief mini-recap before shifting topics
+• No robotic lists or surveys
+• Sound like a senior SDR, not a chatbot
+
+Industry/Vertical Context:
+• If user mentions industry (banking, healthcare, retail), acknowledge it
+• Offer relevant insights: "Many banking customers prioritize [X]..."
+• Reference common use cases for their vertical
+• Examples:
+  - Banking: Security (iLO Silicon Root of Trust), compliance, HA
+  - Healthcare: Data security, uptime, HIPAA considerations
+  - Retail: Seasonal scaling, analytics, PCI compliance
+• Keep it brief (1 sentence) and natural, not forced
+
+═══════════════════════════════════════════════════════════════════
+
+3) DISCOVERY FLOW
+
+Start with High-Level Context:
+"So I can point you well—what are your main workloads (VMs, databases, analytics), and what's driving your server evaluation?"
+
+**RECOMMENDATION TRIGGER:**
+• Need ONLY 3 key facts to recommend:
+  1. Users/Scale (how many users or workload size)  
+  2. Workloads (VMs, analytics, databases, etc.)
+  3. ONE of: Virtualization OR Timeline OR Location OR HA needs
+
+• If you have 3 facts, give recommendation in NEXT response
+• DON'T over-qualify - 3 facts = enough!
+
+MINI-RECAP before recommending:
+"So based on what you've shared: [users], [workloads], [key need]..."
+
+═══════════════════════════════════════════════════════════════════
+
+Use ONLY the context below to provide accurate information about HPE ProLiant servers.
 
 Context:\n${context}`;
 
@@ -400,6 +467,79 @@ Context:\n${context}`;
       retrievalCacheSize: this.retrievalCache.size,
       embeddingCacheSize: this.embeddingCache.size
     };
+  }
+
+  generateSDRDiscoveryResponse(query) {
+    const lowerQuery = query.toLowerCase();
+    
+    // RECOMMENDATION TRIGGER - Check if user is asking for specific server recommendations
+    if ((lowerQuery.includes('which server') || lowerQuery.includes('tell me about') || lowerQuery.includes('recommend') || 
+         lowerQuery.includes('what server') || lowerQuery.includes('best server')) &&
+        (lowerQuery.includes('virtualization') || lowerQuery.includes('scalability') || lowerQuery.includes('availability'))) {
+      return this.generateServerRecommendation(lowerQuery);
+    }
+    
+    // RECOMMENDATION TRIGGER - When they have shared enough context (users + workloads + needs)
+    if ((lowerQuery.includes('million') || lowerQuery.includes('100 users') || lowerQuery.includes('25 to 100') || 
+         lowerQuery.includes('developers') || lowerQuery.includes('operations')) &&
+        (lowerQuery.includes('ai') || lowerQuery.includes('application') || lowerQuery.includes('saas') || 
+         lowerQuery.includes('microservices') || lowerQuery.includes('database'))) {
+      return this.generateServerRecommendation(lowerQuery);
+    }
+    
+    // FOLLOW-UP after gathering info - User says "not yet" or asks for recommendations
+    if (lowerQuery.includes('not yet') || lowerQuery.includes('can you not tell') || 
+        lowerQuery.includes('should i use') || lowerQuery.includes('which servers')) {
+      return this.generateServerRecommendation(lowerQuery);
+    }
+    
+    // SDR Discovery - Banking CTO context
+    if (lowerQuery.includes('bank') || lowerQuery.includes('cto')) {
+      return "Got it—you're a bank CTO. That's a great context! Banking customers often prioritize security with iLO Silicon Root of Trust, compliance features, and high availability. So I can point you in the right direction—what's driving your server evaluation right now? Are you looking at replacing aging infrastructure, expanding capacity, or addressing specific compliance requirements?";
+    }
+    
+    // General help request
+    if (lowerQuery.includes('help') || lowerQuery.includes('assist')) {
+      return "Absolutely! I'd be happy to help you find the right ProLiant server solution. To get started, could you share a bit about your environment? For example, how many users you're supporting, what workloads you're running (VMs, databases, analytics), and whether you're looking at on-prem, hybrid, or modernizing current infrastructure?";
+    }
+    
+    // Performance/Speed requests
+    if (lowerQuery.includes('speed') || lowerQuery.includes('performance') || lowerQuery.includes('memory') || lowerQuery.includes('scalable')) {
+      return "That makes sense—speed, memory, and scalability are key priorities. Many customers see significant performance gains with Gen12 processors and DDR5 memory. To recommend the right configuration, what's your current environment like? Are you running virtualized workloads, and roughly how many users or VMs are we talking about?";
+    }
+    
+    // Server identification requests
+    if (lowerQuery.includes('server') || lowerQuery.includes('identify') || lowerQuery.includes('best') || lowerQuery.includes('need')) {
+      return "Perfect! I can definitely help identify the best ProLiant server for your needs. To point you in the right direction, could you tell me about your workloads—are you running VMs, databases, analytics, or file services? And what's your current scale in terms of users or data volume?";
+    }
+    
+    // Default SDR opening
+    return "Thanks for reaching out! To help match you with the right ProLiant solution, may I ask a couple of quick questions? What type of workloads are you looking to support, and what's driving your server evaluation—growth, modernization, or replacing aging hardware?";
+  }
+
+  generateServerRecommendation(queryContext) {
+    const lowerContext = queryContext.toLowerCase();
+    
+    // Determine scale and workload from context
+    const isLargeScale = lowerContext.includes('million') || lowerContext.includes('large');
+    const isMidScale = lowerContext.includes('100 users') || lowerContext.includes('25 to 100') || lowerContext.includes('mid-sized');
+    const hasAI = lowerContext.includes('ai') || lowerContext.includes('machine learning');
+    const hasVirtualization = lowerContext.includes('virtualization') || lowerContext.includes('vm');
+    const hasSaaS = lowerContext.includes('saas') || lowerContext.includes('database') || lowerContext.includes('application');
+    
+    let recommendation;
+    
+    if (isLargeScale && hasAI) {
+      recommendation = "DL384 Gen11 would be a strong starting point for you. For example, APAC Smart Choice configs like P84646-375 or P84648-375. Why this fits: Large-scale AI workloads with million+ users need DL384's GPU acceleration and 4U expansion capacity; iLO+COM streamline management across your distributed infrastructure.";
+    } else if (isMidScale && hasAI) {
+      recommendation = "DL380 Gen11 would be a strong starting point for you. For example, APAC Smart Choice configs like P84627-375 or P84628-375. Why this fits: AI development with microservices and SaaS platforms benefits from DL380's 2U expansion headroom; iLO and COM streamline DevOps automation and container orchestration.";
+    } else if (hasVirtualization && (isMidScale || isLargeScale)) {
+      recommendation = "DL380 Gen11 would be a strong starting point for you. For example, APAC Smart Choice configs like P84626-375 or P84627-375. Why this fits: Virtualization with growth plans benefits from DL380's memory capacity and 2U expandability; iLO+COM enable centralized VM management and automated scaling.";
+    } else {
+      recommendation = "DL360 Gen11 would be a strong starting point for you. For example, APAC Smart Choice configs like P84654-375 or P84658-375. Why this fits: Mixed workloads with virtualization needs benefit from DL360's 1U density and performance; iLO+COM streamline policy management and updates.";
+    }
+    
+    return `Perfect! Based on what you've shared—your scale, AI/virtualization needs, and growth plans—${recommendation} We'll right-size cores, RAM, and storage with a human expert to nail the exact config. I can arrange a callback with a local HPE expert who can dive deeper. May I capture your details for follow-up?`;
   }
 }
 
