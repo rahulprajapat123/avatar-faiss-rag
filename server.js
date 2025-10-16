@@ -549,7 +549,7 @@ async function createAvatarSession(userId) {
       avatar_id: CONFIG.HEYGEN_AVATAR_ID,
       voice: {
         voice_id: CONFIG.HEYGEN_VOICE_ID,
-        rate: 1.1
+        rate: 1.0
       },
       quality: 'low',
       video_encoding: 'H264'
@@ -774,25 +774,58 @@ async function handleConversation(userQuery, userId, classification, tracker = n
   try {
     console.log(`🧠 [${userId}] Intelligent conversation handling`);
 
-    const ragResult = await ragEngine.query(userQuery, {
-      topK,
-      filter,
-      minScore,
-      stream: true,
-      onToken: ({ token }) => {
-        if (!token) return;
-        buffer += token;
-        if (!firstTokenTime) {
-          firstTokenTime = Date.now() - startTime;
-          if (tracker) {
-            tracker.mark('firstToken');
+    // Check if this is a discovery conversation that needs SDR approach
+    const lowerQuery = userQuery.toLowerCase();
+    const needsSDRDiscovery = (
+      lowerQuery.includes('help') || 
+      lowerQuery.includes('can you help') ||
+      lowerQuery.includes('how can you') ||
+      (lowerQuery.includes('bank') && lowerQuery.includes('cto')) ||
+      (lowerQuery.includes('identify') && lowerQuery.includes('server')) ||
+      (lowerQuery.includes('best') && lowerQuery.includes('need')) ||
+      lowerQuery.includes('which server') ||
+      lowerQuery.includes('recommend') ||
+      lowerQuery.includes('not yet') ||
+      lowerQuery.includes('can you not tell') ||
+      (lowerQuery.includes('million') && lowerQuery.includes('users')) ||
+      (lowerQuery.includes('ai') && lowerQuery.includes('development')) ||
+      (lowerQuery.includes('microservices') || lowerQuery.includes('saas'))
+    );
+
+    let ragResult;
+
+    if (needsSDRDiscovery) {
+      console.log(`🎯 [${userId}] Using SDR discovery approach`);
+      // Force use of SDR discovery by creating a result with no matches
+      ragResult = {
+        answer: ragEngine.generateSDRDiscoveryResponse(userQuery),
+        sources: [],
+        confidence: 0.8,
+        latency: 50,
+        usedSDRFallback: true,
+        noResults: false
+      };
+    } else {
+      ragResult = await ragEngine.query(userQuery, {
+        topK,
+        filter,
+        minScore,
+        stream: true,
+        onToken: ({ token }) => {
+          if (!token) return;
+          buffer += token;
+          if (!firstTokenTime) {
+            firstTokenTime = Date.now() - startTime;
+            if (tracker) {
+              tracker.mark('firstToken');
+            }
+          }
+          if (shouldFlush()) {
+            flushBuffer();
           }
         }
-        if (shouldFlush()) {
-          flushBuffer();
-        }
-      }
-    });
+      });
+    }
 
     if (buffer.trim()) {
       flushBuffer();
@@ -823,9 +856,19 @@ async function handleConversation(userQuery, userId, classification, tracker = n
     }
 
     const success = ragResult && !ragResult.noResults && finalAnswer;
-    const text = success ? finalAnswer : "I don't have enough information to answer that accurately. Please try rephrasing your question about HPE ProLiant servers, or ask about specifications, features, or supported workloads.";
-
-    if (!success) {
+    const isSDRResponse = ragResult?.usedSDRFallback && finalAnswer;
+    
+    let text, method;
+    
+    if (success) {
+      text = finalAnswer;
+      method = 'rag';
+    } else if (isSDRResponse) {
+      text = finalAnswer;
+      method = 'sdr_discovery';
+    } else {
+      text = "Thanks for your question! To give you the most accurate guidance, could you help me understand your specific needs? Are you looking at servers for virtualization, databases, analytics, or other workloads?";
+      method = 'fallback';
       spokenSegments.push(text);
       enqueueSpeech(text);
     }
@@ -833,14 +876,14 @@ async function handleConversation(userQuery, userId, classification, tracker = n
     return {
       text,
       sources: success ? ragResult.sources : [],
-      method: success ? 'rag' : 'rag_no_answer',
+      method,
       latency: ragResult?.latency || Date.now() - startTime,
       ttft: firstTokenTime
     };
 
   } catch (error) {
     console.error(`❌ [${userId}] Conversation error:`, error.message);
-    const fallback = "I apologize, but I'm having trouble processing that request right now. Please try again in a moment or ask about HPE ProLiant servers.";
+    const fallback = "I'm experiencing a brief technical hiccup. While I sort that out, could you tell me what's driving your server evaluation? Are you looking at replacing existing infrastructure, expanding capacity, or addressing specific performance needs?";
     enqueueSpeech(fallback);
     return {
       text: fallback,
@@ -1086,7 +1129,7 @@ app.post('/api/session-ready', async (req, res) => {
     console.log(`✅ Session ready: ${userId}`);
 
     // ⚡ INSTANT GREETING: Pre-cached welcome message (no Voiceflow delay)
-    const instantWelcome = 'Hi! I’m with HPE, and I’m excited to help you unlock the full potential of your ProLiant server solutions. Whether it’s accelerating performance, scaling effortlessly, or simplifying management, we’ve got the tools and expertise to make it happen. Let’s explore how we can take your IT infrastructure to the next level—what are you looking for right now?';
+        const instantWelcome = "Hi, I'm the HPE team's virtual SDR for ProLiant. May I ask a few quick questions to match the right option for you?";
     
     // Return immediately with instant greeting
     res.json({ 
