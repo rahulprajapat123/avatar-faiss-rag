@@ -489,7 +489,7 @@
   </div>
 
   <script>
-    const API_URL = 'http://localhost:3000';
+    const API_URL = window.location.origin;
     const USER_ID = 'user_' + Math.random().toString(36).substr(2, 9);
     
     let room = null;
