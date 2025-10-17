@@ -344,8 +344,12 @@ Use ONLY the context below to provide accurate information about HPE ProLiant se
 
 Context:\n${context}`;
 
+    // Add conversation history if provided
+    const conversationHistory = options.conversationHistory || '';
+    const fullSystemPrompt = systemPrompt + conversationHistory;
+
     const messages = [
-      { role: 'system', content: systemPrompt },
+      { role: 'system', content: fullSystemPrompt },
       { role: 'user', content: query }
     ];
 
