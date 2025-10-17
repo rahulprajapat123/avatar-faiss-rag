@@ -28,10 +28,11 @@ const httpAgent = new http.Agent({
 
 
 // ============================================
-// ⚡ NEW: Import Optimized RAG Engine and Smart Router
+// ⚡ NEW: Import Optimized RAG Engine, Smart Router, and Conversation Manager
 // ============================================
 import OptimizedRAGEngine from './kb/optimized-rag-engine.js';
 import SmartRouter from './kb/smart-router.js';
+import ConversationManager from './conversation-manager.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -394,13 +395,15 @@ function cacheResponse(query, response) {
 }
 
 // ============================================
-// ⚡ NEW: Initialize Optimized RAG Engine and Smart Router
+// ⚡ NEW: Initialize Optimized RAG Engine, Smart Router, and Conversation Manager
 // ============================================
 const ragEngine = new OptimizedRAGEngine();
 const smartRouter = new SmartRouter();
+const conversationManager = new ConversationManager();
 
 console.log('✅ Optimized RAG Engine created (will initialize on first use)');
 console.log('✅ Smart Router initialized');
+console.log('✅ Conversation Manager initialized');
 
 // 💾 Load persistent cache from disk (or generate if missing)
 async function initializeCache() {
@@ -434,10 +437,32 @@ setInterval(() => {
     }
   }
   
+  // Clean up expired conversations
+  conversationManager.cleanup();
+  
   if (responseCache.size > 0) {
     console.log(`🧹 Cache cleanup: ${responseCache.size} response cache entries`);
   }
 }, 60000);
+
+// ============================================
+// MEMORY MONITORING (every 5 minutes)
+// ============================================
+setInterval(() => {
+  const activeConvs = conversationManager.getActiveConversations();
+  const memUsage = process.memoryUsage();
+  
+  console.log(`\n📊 Memory & Conversation Stats:`);
+  console.log(`   Active Conversations: ${activeConvs.length}`);
+  console.log(`   Heap Used: ${(memUsage.heapUsed / 1024 / 1024).toFixed(2)} MB`);
+  console.log(`   Heap Total: ${(memUsage.heapTotal / 1024 / 1024).toFixed(2)} MB`);
+  console.log(`   Response Cache: ${responseCache.size} entries`);
+  
+  // Warning if memory usage is high
+  if (memUsage.heapUsed > 500 * 1024 * 1024) {
+    console.log(`   ⚠️  HIGH MEMORY USAGE - Consider upgrading to Redis`);
+  }
+}, 5 * 60 * 1000); // Every 5 minutes
 
 const fetchOptions = {
   timeout: 10000
@@ -722,6 +747,10 @@ async function closeAvatarSession(userId) {
       }).catch(err => console.error('❌ Stop error:', err.message));
       
       activeSessions.delete(userId);
+      
+      // Clear conversation history
+      conversationManager.clearConversation(userId);
+      
       console.log(`✅ Session closed: ${userId}`);
     } catch (error) {
       console.error('❌ Close error:', error.message);
@@ -774,8 +803,29 @@ async function handleConversation(userQuery, userId, classification, tracker = n
   try {
     console.log(`🧠 [${userId}] Intelligent conversation handling`);
 
+    // 🧠 ADD USER MESSAGE TO CONVERSATION HISTORY
+    conversationManager.addMessage(userId, 'user', userQuery);
+
+    // 🧠 CHECK IF WE HAVE ENOUGH INFO TO RECOMMEND
+    const canRecommend = conversationManager.canRecommend(userId);
+    const discoveredFacts = conversationManager.extractDiscoveredFacts(userId);
+
     // Check if this is a discovery conversation that needs SDR approach
     const lowerQuery = userQuery.toLowerCase();
+    const isRepeatQuestion = (
+      (lowerQuery.includes('already') && (lowerQuery.includes('told') || lowerQuery.includes('shared'))) ||
+      lowerQuery.includes('i have already') ||
+      lowerQuery.includes('repeating')
+    );
+    
+    const needsRecommendation = (
+      canRecommend || 
+      lowerQuery.includes('recommend') ||
+      lowerQuery.includes('which server') ||
+      lowerQuery.includes('best server') ||
+      lowerQuery.includes('can you not tell')
+    );
+
     const needsSDRDiscovery = (
       lowerQuery.includes('help') || 
       lowerQuery.includes('can you help') ||
@@ -783,20 +833,59 @@ async function handleConversation(userQuery, userId, classification, tracker = n
       (lowerQuery.includes('bank') && lowerQuery.includes('cto')) ||
       (lowerQuery.includes('identify') && lowerQuery.includes('server')) ||
       (lowerQuery.includes('best') && lowerQuery.includes('need')) ||
-      lowerQuery.includes('which server') ||
-      lowerQuery.includes('recommend') ||
-      lowerQuery.includes('not yet') ||
-      lowerQuery.includes('can you not tell') ||
-      (lowerQuery.includes('million') && lowerQuery.includes('users')) ||
-      (lowerQuery.includes('ai') && lowerQuery.includes('development')) ||
-      (lowerQuery.includes('microservices') || lowerQuery.includes('saas'))
+      lowerQuery.includes('not yet')
     );
 
     let ragResult;
 
-    if (needsSDRDiscovery) {
+    // 🎯 RECOMMENDATION PATH - User has given enough info
+    if (needsRecommendation) {
+      console.log(`🎯 [${userId}] Ready to recommend! Using RAG with recommendation context`);
+      const recommendationPrompt = conversationManager.getRecommendationPrompt(userId);
+      
+      ragResult = await ragEngine.query(recommendationPrompt, {
+        topK: 4,
+        filter: null, // Get broader results for recommendation
+        minScore: 0.35,
+        stream: true,
+        conversationHistory: conversationManager.getFormattedHistory(userId),
+        onToken: ({ token }) => {
+          if (!token) return;
+          buffer += token;
+          if (!firstTokenTime) {
+            firstTokenTime = Date.now() - startTime;
+            if (tracker) tracker.mark('firstToken');
+          }
+          if (shouldFlush()) flushBuffer();
+        }
+      });
+    } 
+    // 🚫 REPEAT DETECTION - User says they already told us
+    else if (isRepeatQuestion) {
+      console.log(`⚠️ [${userId}] User says they already shared info - apologizing and moving forward`);
+      const facts = conversationManager.extractDiscoveredFacts(userId);
+      let response = "You're absolutely right, my apologies! ";
+      
+      if (facts.users && facts.workloads.length > 0) {
+        response += `Based on what you've shared—${facts.users} users handling ${facts.workloads.join(' and ')} workloads`;
+        if (facts.needs.length > 0) response += ` with focus on ${facts.needs.join(' and ')}`;
+        response += `—let me recommend the right ProLiant solution for you. Give me just a moment to pull the specifics.`;
+      } else {
+        response += "Let me review what you've told me and get you a proper recommendation.";
+      }
+      
+      ragResult = {
+        answer: response,
+        sources: [],
+        confidence: 0.9,
+        latency: 50,
+        usedSDRFallback: true,
+        noResults: false
+      };
+    }
+    // 🎯 DISCOVERY PATH - Continue asking questions
+    else if (needsSDRDiscovery) {
       console.log(`🎯 [${userId}] Using SDR discovery approach`);
-      // Force use of SDR discovery by creating a result with no matches
       ragResult = {
         answer: ragEngine.generateSDRDiscoveryResponse(userQuery),
         sources: [],
@@ -805,12 +894,16 @@ async function handleConversation(userQuery, userId, classification, tracker = n
         usedSDRFallback: true,
         noResults: false
       };
-    } else {
+    } 
+    // 📚 RAG PATH - Technical question with conversation context
+    else {
+      console.log(`📚 [${userId}] Using RAG with conversation context`);
       ragResult = await ragEngine.query(userQuery, {
         topK,
         filter,
         minScore,
         stream: true,
+        conversationHistory: conversationManager.getFormattedHistory(userId, 4),
         onToken: ({ token }) => {
           if (!token) return;
           buffer += token;
@@ -872,6 +965,9 @@ async function handleConversation(userQuery, userId, classification, tracker = n
       spokenSegments.push(text);
       enqueueSpeech(text);
     }
+
+    // 🧠 SAVE ASSISTANT RESPONSE TO CONVERSATION HISTORY
+    conversationManager.addMessage(userId, 'assistant', text);
 
     return {
       text,
@@ -1507,6 +1603,46 @@ app.get('/api/debug/cache', (req, res) => {
       routerStats: smartRouter.getCacheStats()
     });
     
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// ============================================
+// NEW: Debug endpoint for conversation memory
+// ============================================
+app.get('/api/debug/conversations', (req, res) => {
+  try {
+    const activeConvs = conversationManager.getActiveConversations();
+    const memUsage = process.memoryUsage();
+    
+    const conversationDetails = activeConvs.map(userId => {
+      const history = conversationManager.getHistory(userId);
+      const facts = conversationManager.extractDiscoveredFacts(userId);
+      const canRecommend = conversationManager.canRecommend(userId);
+      
+      return {
+        userId: userId.substring(0, 15) + '...',
+        messageCount: history.length,
+        discoveredFacts: facts,
+        canRecommend,
+        lastUpdated: history[history.length - 1]?.timestamp
+      };
+    });
+    
+    res.json({
+      totalActiveConversations: activeConvs.length,
+      memoryUsage: {
+        heapUsed: `${(memUsage.heapUsed / 1024 / 1024).toFixed(2)} MB`,
+        heapTotal: `${(memUsage.heapTotal / 1024 / 1024).toFixed(2)} MB`,
+        rss: `${(memUsage.rss / 1024 / 1024).toFixed(2)} MB`
+      },
+      conversations: conversationDetails,
+      cacheStats: {
+        responseCache: responseCache.size,
+        ragCache: ragEngine.getCacheStats()
+      }
+    });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
